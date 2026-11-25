@@ -18,10 +18,14 @@ Orientation for the next session. Open threads are a record, not a task list.
 - PR #1: catalog, deploy workflow, default-dataset script, README with gridlook
   credit and citation.
 - PR #2: default view moved to OceanSODA v2 fgco2.
-- This PR: agent docs and `scripts/probe-catalog.test.ts`.
+- PR #3: agent docs and `scripts/probe-catalog.test.ts`.
 
 ## Open threads
 
+- **Next task: data audit, issue #4.** Eli will set the plan and the report
+  format at the start; do not assume them. Everything found so far is in the
+  issue (including BICEP POC loading with wrong-looking values, probably a
+  missing land-flag value). Eli said not to rescan before that discussion.
 - **Browser check.** Only the default OceanSODA view is known to have been
   looked at in a browser (Eli took its camera settings from it). Rendering of
   everything else is unverified; the suspects are listed in the README's
