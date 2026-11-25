@@ -17,6 +17,8 @@ globe.
 | `catalog.json` | The dataset catalog, in [gridlook's catalog format](https://github.com/eeholmes/gridlook/blob/main/docs/catalogs.md). |
 | `.github/workflows/deploy.yml` | On every push to `main`, builds `eeholmes/gridlook` at the commit pinned in `GRIDLOOK_REF`, with `catalog.json` as its default catalog, and deploys it to GitHub Pages. |
 | `scripts/set_default_dataset.py` | Makes the built viewer open the first catalog entry when the URL has no `#fragment`. |
+| `scripts/probe-catalog.test.ts` | Opens every catalog entry with gridlook's own reader code; run it inside a gridlook checkout. |
+| `AGENTS.md`, `agent/handoff.md`, `docs/design/` | Notes for people and coding agents: how to work here, current state, and why the catalog is built as it is. |
 
 No gridlook code lives in this repository. To pick up a newer gridlook, change
 `GRIDLOOK_REF` in the workflow.
