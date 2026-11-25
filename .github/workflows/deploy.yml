@@ -1,0 +1,77 @@
+name: Deploy viewer to GitHub Pages
+
+# Builds eeholmes/gridlook at a pinned commit with this repo's catalog.json as
+# its default catalog. No gridlook code lives here: bump GRIDLOOK_REF to pick up
+# a newer gridlook.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+env:
+  GRIDLOOK_REPO: eeholmes/gridlook
+  GRIDLOOK_REF: a2f6ed5389ed79bc48504536717a753dc2350362
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ env.GRIDLOOK_REPO }}
+          ref: ${{ env.GRIDLOOK_REF }}
+          path: gridlook
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: gridlook/package-lock.json
+
+      - run: npm ci
+        working-directory: gridlook
+
+      # gridlook opens static/catalog-extended.json on startup (DEFAULT_CATALOG
+      # in src/views/HashGlobeView.vue), so replacing it makes ours the default.
+      - run: cp catalog.json gridlook/public/static/catalog-extended.json
+
+      - run: npm run build
+        working-directory: gridlook
+
+      # gridlook hard-codes a demo dataset (DEFAULT_DATASET in HashGlobeView.vue)
+      # for a URL with no #fragment. Set the hash to our first catalog entry
+      # before the app reads it, the same workaround publish_viewer.py uses.
+      - name: Default to the first catalog entry
+        run: python3 scripts/set_default_dataset.py catalog.json gridlook/dist/index.html
+
+      # The site is a copy of gridlook, and its MIT license requires the
+      # copyright notice to go with every copy.
+      - run: cp gridlook/LICENSE gridlook/dist/LICENSE-gridlook.txt
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: gridlook/dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
