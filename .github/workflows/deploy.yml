@@ -57,6 +57,10 @@ jobs:
       - name: Default to the first catalog entry
         run: python3 scripts/set_default_dataset.py catalog.json gridlook/dist/index.html
 
+      # The site is a copy of gridlook, and its MIT license requires the
+      # copyright notice to go with every copy.
+      - run: cp gridlook/LICENSE gridlook/dist/LICENSE-gridlook.txt
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: gridlook/dist

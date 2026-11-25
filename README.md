@@ -82,3 +82,42 @@ unverified.
 - **Dimension order.** The 4DMED-SEA primary production and 3D biophysical
   variables put `depth` last, and the BOOMS 4D stores order `longitude` before
   `latitude`. Both are worth a look in the browser.
+
+## Reuse and citation
+
+**The viewer is gridlook, not this repository's work.** gridlook is developed at
+[`d70-t/gridlook`](https://github.com/d70-t/gridlook) and released under the
+[MIT License](https://github.com/d70-t/gridlook/blob/main/LICENSE), © Max Planck
+Institute for Meteorology and German Climate Computing Center (DKRZ). This site
+is built from the fork [`eeholmes/gridlook`](https://github.com/eeholmes/gridlook),
+and the deployed viewer carries gridlook's license at
+[`LICENSE-gridlook.txt`](https://eeholmes.github.io/gridlook-eh26/LICENSE-gridlook.txt).
+Any use of gridlook code must keep that license notice and credit gridlook. If
+you use or show this viewer in published work, a presentation, or another
+repository, cite gridlook:
+
+> Max Planck Institute for Meteorology and German Climate Computing Center
+> (2026). *gridlook*. https://github.com/d70-t/gridlook
+
+```bibtex
+@software{gridlook_2026,
+  author = {{Max Planck Institute for Meteorology} and {German Climate Computing Center}},
+  title  = {gridlook},
+  year   = {2026},
+  url    = {https://github.com/d70-t/gridlook}
+}
+```
+
+gridlook publishes no citation file of its own; this follows its license holder
+and should be replaced if the project adds one.
+
+The rest of this repository (the catalog, the workflow and the script) is
+released under [CC0 1.0 Universal](LICENSE): you may use it for any purpose
+without asking. If you reuse it, please cite gridlook as above and, if you
+like, this repository:
+
+> Holmes, E.E. (2026). *gridlook-eh26*. eeholmes/gridlook-eh26.
+> https://github.com/eeholmes/gridlook-eh26
+
+The datasets belong to their providers and carry their own licences (the
+`license` tag on each catalog entry); cite them as their OSC entries ask.
