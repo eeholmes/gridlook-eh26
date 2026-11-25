@@ -3,6 +3,20 @@
   "title": "EH26 Ocean Hackathon datasets",
   "datasets": [
     {
+      "title": "OceanSODA-ETHZ v2 fgco2 (GCB 2026, multiscale)",
+      "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/OceanSODA_ETHZv2.r2026.GCB-fgco2-1982_2025-pyramid.zarr",
+      "tags": {
+        "project": "OceanSODA-ETHZ",
+        "region": "Global",
+        "format": "Zarr v3",
+        "layout": "multiscale",
+        "grid": "regular",
+        "license": "CC-BY-NC-SA-4.0"
+      },
+      "description": "Air-sea CO2 flux and inputs for the Global Carbon Budget 2026, 1982–2025. Multiscale store; group 0 is the full 0.25° resolution.",
+      "params": "varname=0/fgco2::lat=59.5882::lon=14.7343::px=0::py=0::alt=95910936::dimIndices_time=0"
+    },
+    {
       "title": "4DMED-SEA sea-surface salinity and density",
       "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/sssd.zarr",
       "tags": {
@@ -192,22 +206,6 @@
       "description": "Surface-ocean carbonate-system variables, global 1°, monthly 1982–2024.",
       "params": {
         "varname": "ph_total"
-      }
-    },
-    {
-      "title": "OceanSODA-ETHZ v2 fgco2 (GCB 2026, multiscale)",
-      "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/OceanSODA_ETHZv2.r2026.GCB-fgco2-1982_2025-pyramid.zarr",
-      "tags": {
-        "project": "OceanSODA-ETHZ",
-        "region": "Global",
-        "format": "Zarr v3",
-        "layout": "multiscale",
-        "grid": "regular",
-        "license": "CC-BY-NC-SA-4.0"
-      },
-      "description": "Air-sea CO2 flux and inputs for the Global Carbon Budget 2026, 1982–2025. Multiscale store; group 0 is the full 0.25° resolution.",
-      "params": {
-        "varname": "0/fgco2"
       }
     },
     {
