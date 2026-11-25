@@ -12,13 +12,13 @@ globe.
 
 ## What is here
 
-| File | Purpose |
-| --- | --- |
-| `catalog.json` | The dataset catalog, in [gridlook's catalog format](https://github.com/eeholmes/gridlook/blob/main/docs/catalogs.md). |
-| `.github/workflows/deploy.yml` | On every push to `main`, builds `eeholmes/gridlook` at the commit pinned in `GRIDLOOK_REF`, with `catalog.json` as its default catalog, and deploys it to GitHub Pages. |
-| `scripts/set_default_dataset.py` | Makes the built viewer open the first catalog entry when the URL has no `#fragment`. |
-| `scripts/probe-catalog.test.ts` | Opens every catalog entry with gridlook's own reader code; run it inside a gridlook checkout. |
-| `AGENTS.md`, `agent/handoff.md`, `docs/design/` | Notes for people and coding agents: how to work here, current state, and why the catalog is built as it is. |
+| File                                            | Purpose                                                                                                                                                                 |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `catalog.json`                                  | The dataset catalog, in [gridlook's catalog format](https://github.com/eeholmes/gridlook/blob/main/docs/catalogs.md).                                                   |
+| `.github/workflows/deploy.yml`                  | On every push to `main`, builds `eeholmes/gridlook` at the commit pinned in `GRIDLOOK_REF`, with `catalog.json` as its default catalog, and deploys it to GitHub Pages. |
+| `scripts/set_default_dataset.py`                | Makes the built viewer open the first catalog entry when the URL has no `#fragment`.                                                                                    |
+| `scripts/probe-catalog.test.ts`                 | Opens every catalog entry with gridlook's own reader code; run it inside a gridlook checkout.                                                                           |
+| `AGENTS.md`, `agent/handoff.md`, `docs/design/` | Notes for people and coding agents: how to work here, current state, and why the catalog is built as it is.                                                             |
 
 No gridlook code lives in this repository. To pick up a newer gridlook, change
 `GRIDLOOK_REF` in the workflow.
@@ -36,20 +36,20 @@ for the stores that are not in STAC (SCOPE) or whose STAC link is wrong
 has stores the notebooks never open, such as all 31 WAPOSAL tracks and every
 OceanSODA-ETHZ v2 variable.
 
-| Project | Stores | Region |
-| --- | --- | --- |
-| 4DMED-SEA | 9 | Mediterranean |
-| WOC | 1 | North Atlantic |
-| Atlantic OHC | 1 | Global |
-| OceanSODA-ETHZ | 11 | Global |
-| WAPOSAL | 31 | Coastal sites (along-track) |
-| MITHO | 3 | Global (do not open, see below) |
-| BICEP | 4 | Global |
-| CAREHeat | 5 | Global, Mediterranean |
-| BOOMS | 4 | Global, Atlantic, Southern Ocean |
-| CoastDyn | 1 | Europe |
-| UpperDyn | 2 | North Atlantic |
-| SCOPE | 4 | Mediterranean |
+| Project        | Stores | Region                           |
+| -------------- | ------ | -------------------------------- |
+| 4DMED-SEA      | 9      | Mediterranean                    |
+| WOC            | 1      | North Atlantic                   |
+| Atlantic OHC   | 1      | Global                           |
+| OceanSODA-ETHZ | 11     | Global                           |
+| WAPOSAL        | 31     | Coastal sites (along-track)      |
+| MITHO          | 3      | Global (do not open, see below)  |
+| BICEP          | 4      | Global                           |
+| CAREHeat       | 5      | Global, Mediterranean            |
+| BOOMS          | 4      | Global, Atlantic, Southern Ocean |
+| CoastDyn       | 1      | Europe                           |
+| UpperDyn       | 2      | North Atlantic                   |
+| SCOPE          | 4      | Mediterranean                    |
 
 Each entry sets a default variable (`params.varname`) where the store's first
 variable is a poor starting point, and carries the dataset's licence as a tag.
@@ -99,7 +99,7 @@ you use or show this viewer in published work, a presentation, or another
 repository, cite gridlook:
 
 > Max Planck Institute for Meteorology and German Climate Computing Center
-> (2026). *gridlook*. https://github.com/d70-t/gridlook
+> (2026). _gridlook_. https://github.com/d70-t/gridlook
 
 ```bibtex
 @software{gridlook_2026,
@@ -118,7 +118,7 @@ released under [CC0 1.0 Universal](LICENSE): you may use it for any purpose
 without asking. If you reuse it, please cite gridlook as above and, if you
 like, this repository:
 
-> Holmes, E.E. (2026). *gridlook-eh26*. eeholmes/gridlook-eh26.
+> Holmes, E.E. (2026). _gridlook-eh26_. eeholmes/gridlook-eh26.
 > https://github.com/eeholmes/gridlook-eh26
 
 The datasets belong to their providers and carry their own licences (the

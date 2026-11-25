@@ -23,7 +23,11 @@ import { getGridType } from "@/lib/data/gridTypeDetector";
 import { indexFromZarr } from "@/lib/data/sourceIndexing";
 import { ZarrDataManager } from "@/lib/data/ZarrDataManager";
 
-type TEntry = { title: string; url: string; params?: string | Record<string, string> };
+type TEntry = {
+  title: string;
+  url: string;
+  params?: string | Record<string, string>;
+};
 
 function varnameOf(entry: TEntry): string | undefined {
   const p = entry.params;
@@ -41,14 +45,16 @@ async function probe(entry: TEntry) {
   const varname = varnameOf(entry) ?? index.default_var ?? valid[0];
   out.varname = varname;
   const errs: string[] = [];
-  out.gridType = await getGridType(true, varname, index, (e, c) => errs.push(`${c}: ${String(e)}`));
+  out.gridType = await getGridType(true, varname, index, (e, c) =>
+    errs.push(`${c}: ${String(e)}`),
+  );
   if (errs.length) {
     out.gridErrs = errs;
   }
   const src = vars[varname];
   const arr = await ZarrDataManager.getVariableInfo(
     { store: src.store, dataset: src.dataset } as never,
-    varname
+    varname,
   );
   out.shape = arr.shape;
   try {
@@ -61,7 +67,9 @@ async function probe(entry: TEntry) {
 }
 
 test("probe catalog", { timeout: 3_600_000 }, async () => {
-  const { datasets } = JSON.parse(readFileSync(process.env.CATALOG!, "utf8")) as {
+  const { datasets } = JSON.parse(
+    readFileSync(process.env.CATALOG!, "utf8"),
+  ) as {
     datasets: TEntry[];
   };
   const results = [];

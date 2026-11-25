@@ -16,17 +16,17 @@ Most access notebooks do not contain a URL. They ask the EarthCODE STAC API,
 dataset's collection, not only the items the notebooks open. That is why WAPOSAL
 has 31 entries (11 sites × S3A/S3B, 9 for CryoSat-2) and OceanSODA-ETHZ has 11.
 
-| Collection(s) | Notes |
-| --- | --- |
-| `4dmed-2d-sss`, `4dmed-2d-alt-miost-le-24`, `4dmed-2d-alt-varnet-8`, `4dmed-2d-alt-varnet-20`, `4dmed-2d-pft-kd` (2 items), `4dmed-t-s-geo-150`, `4dmed-3d-prim-prod-150` | 4DMED-SEA |
-| `4dmed-t-s-geo-a-150` | **STAC href is a 404** (`ocean_datasets/4dmed-bp.zarr`). The notebook's `4dmed/4dmed-bp.zarr` works and is what the catalog uses. |
-| `total-surface-current-15` | WOC |
-| `4d-atlantic-ohc-global` | One Zarr item, one NetCDF item; only the Zarr is listed. |
-| `ocean-soda-ethz`, `oceansoda-ethz-v2` | v1 store, nine v2 per-variable stores, and the v2 GCB pyramid. |
-| `waposal-waves` | 31 along-track stores. |
-| `global-cumulative-hazard-indexes-chis` | MITHO, 3 stores, broken (below). |
-| `bicep-database`, `careheat-database`, `booms-dataset`, `morlenn_mld`, `coastdyn-adt-rep-2d-dataset` | The page's links say `projects/coastdyn` but the STAC collection is `coastdyn-adt-rep-2d-dataset`. |
-| SCOPE | Not in STAC. Four stores on `deep-esdl-public` from the notebook; it opens three with xarray and lists `global_open_ocean_doc.zarr` through xcube's store listing. |
+| Collection(s)                                                                                                                                                             | Notes                                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `4dmed-2d-sss`, `4dmed-2d-alt-miost-le-24`, `4dmed-2d-alt-varnet-8`, `4dmed-2d-alt-varnet-20`, `4dmed-2d-pft-kd` (2 items), `4dmed-t-s-geo-150`, `4dmed-3d-prim-prod-150` | 4DMED-SEA                                                                                                                                                          |
+| `4dmed-t-s-geo-a-150`                                                                                                                                                     | **STAC href is a 404** (`ocean_datasets/4dmed-bp.zarr`). The notebook's `4dmed/4dmed-bp.zarr` works and is what the catalog uses.                                  |
+| `total-surface-current-15`                                                                                                                                                | WOC                                                                                                                                                                |
+| `4d-atlantic-ohc-global`                                                                                                                                                  | One Zarr item, one NetCDF item; only the Zarr is listed.                                                                                                           |
+| `ocean-soda-ethz`, `oceansoda-ethz-v2`                                                                                                                                    | v1 store, nine v2 per-variable stores, and the v2 GCB pyramid.                                                                                                     |
+| `waposal-waves`                                                                                                                                                           | 31 along-track stores.                                                                                                                                             |
+| `global-cumulative-hazard-indexes-chis`                                                                                                                                   | MITHO, 3 stores, broken (below).                                                                                                                                   |
+| `bicep-database`, `careheat-database`, `booms-dataset`, `morlenn_mld`, `coastdyn-adt-rep-2d-dataset`                                                                      | The page's links say `projects/coastdyn` but the STAC collection is `coastdyn-adt-rep-2d-dataset`.                                                                 |
+| SCOPE                                                                                                                                                                     | Not in STAC. Four stores on `deep-esdl-public` from the notebook; it opens three with xarray and lists `global_open_ocean_doc.zarr` through xcube's store listing. |
 
 ## Checks and what they found
 
