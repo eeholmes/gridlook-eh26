@@ -1,0 +1,760 @@
+{
+ "stac": [
+  {
+   "collection": "4dmed-2d-sss",
+   "status": 200,
+   "license": "CC-BY-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "4dmed-2d-sss-item",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/sssd.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "cc-by-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "4dmed-2d-alt-miost-le-24",
+   "status": 200,
+   "license": "CC-BY-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "4dmed-2d-alt-miost-le-24-item",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/fsle.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "cc-by-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "4dmed-2d-alt-varnet-8",
+   "status": 200,
+   "license": "CC-BY-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "4dmed-2d-alt-varnet-8-item",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/4dvarnet.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "cc-by-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "4dmed-2d-alt-varnet-20",
+   "status": 200,
+   "license": "CC-BY-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "4dmed-2d-alt-varnet-20-item",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/4dvarnet-ssh.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "cc-by-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "4dmed-2d-pft-kd",
+   "status": 200,
+   "license": "CC-BY-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "4dmed-2d-pft-kd-item-pft",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/4dmed-2d-pft.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "cc-by-4.0"
+    },
+    {
+     "item": "4dmed-2d-pft-kd-item",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/4dmed-2d-kd.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "cc-by-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "4dmed-t-s-geo-150",
+   "status": 200,
+   "license": "CC-BY-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "4dmed-t-s-geo-150-item",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/tsgeo150.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "cc-by-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "4dmed-3d-prim-prod-150",
+   "status": 200,
+   "license": "CC-BY-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "4dmed-3d-prim-prod-150-item",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/4dmed-pp.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "cc-by-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "4dmed-t-s-geo-a-150",
+   "status": 200,
+   "license": "CC-BY-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "4dmed-t-s-geo-a-150-item",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/4dmed-bp.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "no zarr.json/.zmetadata/.zgroup (404)",
+     "item_license": "cc-by-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "total-surface-current-15",
+   "status": 200,
+   "license": "CC-BY-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "total-surface-current-15-woc",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/woc.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "4d-atlantic-ohc-global",
+   "status": 200,
+   "license": "other",
+   "license_links": [],
+   "items": [
+    {
+     "item": "4datlantic-ohc-global-netcdf",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/4datlantic-ohc/OHC_4DATLANTIC_200204_202309_V3-0.nc",
+     "type": "application/x-netcdf",
+     "resolves": "no zarr.json/.zmetadata/.zgroup (404)",
+     "item_license": "proprietary"
+    },
+    {
+     "item": "4datlantic-ohc-global",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/ocean_heat.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "AvisoLicense"
+    }
+   ]
+  },
+  {
+   "collection": "ocean-soda-ethz",
+   "status": 200,
+   "license": "CC-BY-NC-SA-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "ocean-soda-zarr",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/ocean-soda.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-NC-SA-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "oceansoda-ethz-v2",
+   "status": 200,
+   "license": "CC-BY-NC-SA-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "oceansoda-ethz-v2-fgco2CT",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/fgco2CT.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-NC-SA-4.0"
+    },
+    {
+     "item": "oceansoda-ethz-v2-sol",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/sol.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-NC-SA-4.0"
+    },
+    {
+     "item": "OceanSODA_ETHZv2.r2026.GCB-fgco2-1982_2025-pyramid",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/OceanSODA_ETHZv2.r2026.GCB-fgco2-1982_2025-pyramid.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-NC-SA-4.0"
+    },
+    {
+     "item": "oceansoda-ethz-v2-kw",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/kw.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-NC-SA-4.0"
+    },
+    {
+     "item": "oceansoda-ethz-v2-fgco2",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/fgco2.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-NC-SA-4.0"
+    },
+    {
+     "item": "oceansoda-ethz-v2-temperature",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/temperature.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-NC-SA-4.0"
+    },
+    {
+     "item": "oceansoda-ethz-v2-sfco2_uncert",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/sfco2_uncert.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-NC-SA-4.0"
+    },
+    {
+     "item": "oceansoda-ethz-v2-sfco2",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/sfco2.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-NC-SA-4.0"
+    },
+    {
+     "item": "oceansoda-ethz-v2-ice",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/ice.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-NC-SA-4.0"
+    },
+    {
+     "item": "oceansoda-ethz-v2-dfco2",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/dfco2.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-NC-SA-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "waposal-waves",
+   "status": 200,
+   "license": "CC-BY-SA-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "waposal-fg-s3b",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FG-S3B.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-az-s3b",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/AZ-S3B.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-pt-s3b",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/PT-S3B.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-fp-s3b",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FP-S3B.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-md-s3b",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/MD-S3B.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-cn-s3b",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/CN-S3B.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-ns-s3b",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/NS-S3B.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-ff-s3b",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FF-S3B.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-uk-s3b",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/UK-S3B.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-bn-s3b",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/BN-S3B.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-mt-s3b",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/MT-S3B.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-pt-s3a",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/PT-S3A.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-az-s3a",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/AZ-S3A.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-md-s3a",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/MD-S3A.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-ns-s3a",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/NS-S3A.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-cn-s3a",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/CN-S3A.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-ff-s3a",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FF-S3A.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-fg-s3a",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FG-S3A.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-uk-s3a",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/UK-S3A.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-bn-s3a",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/BN-S3A.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-mt-s3a",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/MT-S3A.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-fp-s3a",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FP-S3A.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-fp-cs2",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FP-CS2.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-az-cs2",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/AZ-CS2.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-md-cs2",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/MD-CS2.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-pt-cs2",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/PT-CS2.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-ns-cs2",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/NS-CS2.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-ff-cs2",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FF-CS2.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-uk-cs2",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/UK-CS2.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-mt-cs2",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/MT-CS2.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    },
+    {
+     "item": "waposal-bn-cs2",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/BN-CS2.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 .zmetadata",
+     "item_license": "CC-BY-SA-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "global-cumulative-hazard-indexes-chis",
+   "status": 200,
+   "license": "CC-BY-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "global-cumulative-hazard-indexes-chis-mitho-chi4_2012_2020",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/mitho/chi4_2012_2020.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "cc-by-4.0"
+    },
+    {
+     "item": "global-cumulative-hazard-indexes-chis-mitho-chi2_2004_2022",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/mitho/chi2_2004_2022.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "cc-by-4.0"
+    },
+    {
+     "item": "global-cumulative-hazard-indexes-chis-mitho-ch13",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/mitho/ch13.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "cc-by-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "bicep-database",
+   "status": 200,
+   "license": "other",
+   "license_links": [],
+   "items": [
+    {
+     "item": "bicep-database-oceanic_export_production",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/bicep/bicep_oceanic_export_production.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "unknown"
+    },
+    {
+     "item": "bicep-database-phytoplankton_carbon",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/bicep/phytoplankton_carbon.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "unknown"
+    },
+    {
+     "item": "bicep-database-marine_primary_productivity",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/bicep/bicep_marine_primary_productivity.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "unknown"
+    },
+    {
+     "item": "bicep-database-particulate_organic_carbon_geo",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/bicep/particulate_organic_carbon_geo.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "unknown"
+    }
+   ]
+  },
+  {
+   "collection": "careheat-database",
+   "status": 200,
+   "license": "CC-BY-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "careheat-database-careheat4d-med",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/careheat4d-med.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "unknown"
+    },
+    {
+     "item": "careheat-database-ssa_careheat_mhw_metrics_2d",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/ssa_careheat_mhw_metrics_2d.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "unknown"
+    },
+    {
+     "item": "careheat-database-ssa_careheat_mhw_2d",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/ssa_careheat_mhw_2d.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "unknown"
+    },
+    {
+     "item": "careheat-database-careheat_mhw_metrics_2d",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/careheat_mhw_metrics_2d.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "unknown"
+    },
+    {
+     "item": "careheat-database-careheat_mhw_2d",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/careheat_mhw_2d.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "unknown"
+    }
+   ]
+  },
+  {
+   "collection": "booms-dataset",
+   "status": 200,
+   "license": "CC-BY-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "booms-dataset-seascape-t3-4d-southern",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/booms/seascape-t3-4d-southern.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-NC-4.0"
+    },
+    {
+     "item": "booms-dataset-seascape-t3-4d-atlantic",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/booms/seascape-t3-4d-atlantic.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-NC-4.0"
+    },
+    {
+     "item": "booms-dataset-seascape-t2-biophysical",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/booms/seascape-t2-biophysical.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-NC-4.0"
+    },
+    {
+     "item": "booms-dataset-seascape-t1-owt",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/booms/seascape-t1-owt.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-NC-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "morlenn_mld",
+   "status": 200,
+   "license": "CC-BY-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "morlenn_mld-morlenn_baseline",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/upperdyn-morlenn/morlenn_baseline.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "cc-by-4.0"
+    },
+    {
+     "item": "morlenn_mld-morlenn_assim",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/upperdyn-morlenn/morlenn_assim.zarr",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "cc-by-4.0"
+    }
+   ]
+  },
+  {
+   "collection": "coastdyn-adt-rep-2d-dataset",
+   "status": 200,
+   "license": "CC-BY-4.0",
+   "license_links": [],
+   "items": [
+    {
+     "item": "coastdyn-adt-rep-2d-dataset-coastdyn-miost-l4",
+     "asset": "data",
+     "href": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/coastdyn/coastdyn-miost-l4.zarr/",
+     "type": "application/vnd+zarr",
+     "resolves": "200 zarr.json",
+     "item_license": "CC-BY-4.0"
+    }
+   ]
+  }
+ ],
+ "cors": {
+  "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/bicep/particulate_organic_carbon_geo.zarr/zarr.json": {
+   "get": 200,
+   "acao": "*",
+   "expose": null,
+   "preflight": 200,
+   "preflight_acao": "https://eeholmes.github.io",
+   "preflight_allow_headers": "range",
+   "preflight_methods": "GET"
+  },
+  "https://deep-esdl-public.s3.eu-central-1.amazonaws.com/SCOPE/mediterranean/global_coastal_doc.zarr/.zmetadata": {
+   "get": 200,
+   "acao": "*",
+   "expose": null,
+   "preflight": 200,
+   "preflight_acao": "*",
+   "preflight_allow_headers": "range",
+   "preflight_methods": "GET, HEAD"
+  }
+ }
+}

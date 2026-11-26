@@ -1,0 +1,5986 @@
+[
+ {
+  "title": "OceanSODA-ETHZ v2 fgco2 (GCB 2026, multiscale)",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/OceanSODA_ETHZv2.r2026.GCB-fgco2-1982_2025-pyramid.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 75662,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 40
+  },
+  "groupAttrs": {
+   "multiscales": "{\"layout\":[{\"asset\":\"0\",\"spatial:shape\":[720,1440],\"spatial:transform\":[0.25,0,-180,0,-0.25,90]},{\"asset\":\"1\",\"derived_from\":\"0\",\"transform\":{\"scale\":[2,2],\"translation\":[0,0]},\"spatial:shape\":[360,720],\"spatial:transform\":[0.5,0,-180,0,-0.5,90]},{\"asset\":\"2\",\"derived_from\":\"1\",\"transform\":{\"scale\":[2,2],\"translation\":[0,0]},\"spatial:shape\":[180,360],\"spatial:transform\":[1,0,-180,0,-1,90]}]}"
+  },
+  "groupAttrKeys": 13,
+  "groups": [
+   "0",
+   "1",
+   "2"
+  ],
+  "varname": "0/fgco2",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    2024,
+    720,
+    1440
+   ],
+   "units": "mol m-2 s-1",
+   "coordinates": "spatial_ref",
+   "grid_mapping": "spatial_ref"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     720
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -89.875,
+    "max": 89.875,
+    "nan": 0,
+    "first": 89.875,
+    "last": -89.875,
+    "order": "descending",
+    "distinctSteps": [
+     "-0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     2024
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1982-01-05 00:00:00",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 16064,
+    "nan": 0,
+    "first": 0,
+    "last": 16064,
+    "order": "ascending",
+    "distinctSteps": [
+     "8.00000",
+     "6.00000",
+     "7.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "4DMED-SEA sea-surface salinity and density",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/sssd.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 12064,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 8
+  },
+  "groupAttrs": {
+   "Conventions": "CF-1.7",
+   "title": "Mediterranean Analysed Sea Surface Salinity and Density",
+   "institution": "CNR",
+   "references": "Buongiorno Nardelli, B., R. Droghei, and R. Santoleri (2016), Multi-dimensional interpolation of SMOS sea surface salinity with surface temperature and in situ salinity data, Remote Sens. Environ., doi:10.1016/j.rse.2015.12.052.; Buongiorno Nardelli, B. (2012). A novel approach for the high resolution interpolation of in situ Sea Surface Salinity, J. Atmos. Ocean. Tech., doi:10.1175/JTECH-D-11-00099.1; Droghei, R., Buongiorno Nardelli, B., and Santoleri, R. (2016). Combining In-situ and Satellite Observations to Retrieve Salinity and Density at the Ocean Surface, J. Atmos. Ocean. Tech., doi:10.1175/JTECH-D-15-0194.1; Sammartino, M., Aronica, S., Santoleri, S., and B. Buongiorno Nardelli, (2022), Retrieving Mediterranean Sea Surface Salinity Distribution and Interannual Trends from Multi-Sensor Satellite and In Situ Data, Remote Sens., doi.org/10.3390/rs14102502"
+  },
+  "groupAttrKeys": 16,
+  "groups": [],
+  "varname": "sos",
+  "variable": {
+   "dims": [
+    "time",
+    "depth",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    2557,
+    1,
+    378,
+    1012
+   ],
+   "units": ".0001",
+   "standard_name": "sea_surface_salinity",
+   "long_name": "sea surface salinity"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "depth": {
+    "dtype": "float32",
+    "shape": [
+     1
+    ],
+    "dims": [
+     "depth"
+    ],
+    "units": "m",
+    "axis": "Z",
+    "standard_name": "depth",
+    "min": 0,
+    "max": 0,
+    "nan": 0,
+    "first": 0,
+    "last": 0
+   },
+   "lat": {
+    "dtype": "float32",
+    "shape": [
+     378
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": 30.27083396911621,
+    "max": 45.97916793823242,
+    "nan": 0,
+    "first": 30.27083396911621,
+    "last": 45.97916793823242,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416660",
+     "0.0416679",
+     "0.0416641"
+    ]
+   },
+   "lon": {
+    "dtype": "float32",
+    "shape": [
+     1012
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -6.062498092651367,
+    "max": 36.0625,
+    "nan": 0,
+    "first": -6.062498092651367,
+    "last": 36.0625,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416660",
+     "0.0416670",
+     "0.0416679",
+     "0.0416641",
+     "0.0416718"
+    ]
+   },
+   "time": {
+    "dtype": "int32",
+    "shape": [
+     2557
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "hours since 1950-01-01",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "Gregorian",
+    "min": 578556,
+    "max": 639900,
+    "nan": 0,
+    "first": 578556,
+    "last": 639900,
+    "order": "ascending",
+    "distinctSteps": [
+     "24.0000",
+     "12.0000",
+     "36.0000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "4DMED-SEA MIOST Lagrangian eddies (FSLE)",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/fsle.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 5613,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 4
+  },
+  "groupAttrs": {
+   "title": "Altimetry derived finite-size Lyapunov exponents",
+   "institution": "IMEDEA (UIB-CSIC)",
+   "source": "Algorithm developed by I. Hernandez-Carrasco"
+  },
+  "groupAttrKeys": 8,
+  "groups": [],
+  "varname": "fsle",
+  "variable": {
+   "dims": [
+    "time",
+    "y",
+    "x"
+   ],
+   "shape": [
+    2300,
+    376,
+    1010
+   ],
+   "units": "1/days",
+   "long_name": "backward Finite Size Lyapunov Exponents",
+   "coordinates": "lat lon"
+  },
+  "dimsWithoutCoord": [
+   "y",
+   "x"
+  ],
+  "coords": {
+   "lat": {
+    "dtype": "float32",
+    "shape": [
+     376,
+     1010
+    ],
+    "dims": [
+     "y",
+     "x"
+    ],
+    "units": "degrees_north",
+    "min": 30.312496185302734,
+    "max": 45.936622619628906,
+    "nan": 0,
+    "first": 30.312496185302734,
+    "last": 45.936622619628906
+   },
+   "lon": {
+    "dtype": "float32",
+    "shape": [
+     376,
+     1010
+    ],
+    "dims": [
+     "y",
+     "x"
+    ],
+    "units": "degrees_east",
+    "min": -6.020831108093262,
+    "max": 36.02161407470703,
+    "nan": 0,
+    "first": -6.020831108093262,
+    "last": 36.02161407470703
+   },
+   "time": {
+    "dtype": "float32",
+    "shape": [
+     2300
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1950-01-01",
+    "calendar": "proleptic_gregorian",
+    "min": 24197,
+    "max": 26501,
+    "nan": 0,
+    "first": 24197,
+    "last": 26501,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000",
+     "2.00000",
+     "3.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "4DMED-SEA 4DVarNet 1/8° sea level",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/4dvarnet.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 13951,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 10
+  },
+  "groupAttrs": {},
+  "groupAttrKeys": 0,
+  "groups": [],
+  "varname": "adt",
+  "variable": {
+   "dims": [
+    "time",
+    "latitude",
+    "longitude"
+   ],
+   "shape": [
+    2405,
+    378,
+    1012
+   ],
+   "units": "m",
+   "standard_name": "sea_surface_height_above_geoid",
+   "long_name": "Absolute dynamic topography",
+   "coordinates": "longitude latitude",
+   "grid_mapping": "crs"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "latitude": {
+    "dtype": "float32",
+    "shape": [
+     378
+    ],
+    "dims": [
+     "latitude"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": 30.270830154418945,
+    "max": 45.979164123535156,
+    "nan": 0,
+    "first": 30.270830154418945,
+    "last": 45.979164123535156,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416660",
+     "0.0416679",
+     "0.0416641"
+    ]
+   },
+   "longitude": {
+    "dtype": "float32",
+    "shape": [
+     1012
+    ],
+    "dims": [
+     "longitude"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -6.062498092651367,
+    "max": 36.062503814697266,
+    "nan": 0,
+    "first": -6.062498092651367,
+    "last": 36.062503814697266,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416670",
+     "0.0416665",
+     "0.0416667",
+     "0.0416666",
+     "0.0416660",
+     "0.0416679",
+     "0.0416641"
+    ]
+   },
+   "time": {
+    "dtype": "float32",
+    "shape": [
+     2405
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1950-01-01",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "gregorian",
+    "min": 24106,
+    "max": 26510,
+    "nan": 0,
+    "first": 24106,
+    "last": 26510,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "4DMED-SEA 4DVarNet 1/20° sea-surface height",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/4dvarnet-ssh.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 13951,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 10
+  },
+  "groupAttrs": {},
+  "groupAttrKeys": 0,
+  "groups": [],
+  "varname": "adt",
+  "variable": {
+   "dims": [
+    "time",
+    "latitude",
+    "longitude"
+   ],
+   "shape": [
+    2405,
+    378,
+    1012
+   ],
+   "units": "m",
+   "standard_name": "sea_surface_height_above_geoid",
+   "long_name": "Absolute dynamic topography",
+   "coordinates": "longitude latitude",
+   "grid_mapping": "crs"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "latitude": {
+    "dtype": "float32",
+    "shape": [
+     378
+    ],
+    "dims": [
+     "latitude"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": 30.270830154418945,
+    "max": 45.979164123535156,
+    "nan": 0,
+    "first": 30.270830154418945,
+    "last": 45.979164123535156,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416660",
+     "0.0416679",
+     "0.0416641"
+    ]
+   },
+   "longitude": {
+    "dtype": "float32",
+    "shape": [
+     1012
+    ],
+    "dims": [
+     "longitude"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -6.062498092651367,
+    "max": 36.062503814697266,
+    "nan": 0,
+    "first": -6.062498092651367,
+    "last": 36.062503814697266,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416670",
+     "0.0416665",
+     "0.0416667",
+     "0.0416666",
+     "0.0416660",
+     "0.0416679",
+     "0.0416641"
+    ]
+   },
+   "time": {
+    "dtype": "float32",
+    "shape": [
+     2405
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1950-01-01",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "gregorian",
+    "min": 24106,
+    "max": 26510,
+    "nan": 0,
+    "first": 24106,
+    "last": 26510,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "4DMED-SEA phytoplankton functional types",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/4dmed-2d-pft.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 9453,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 8
+  },
+  "groupAttrs": {
+   "title": "Gridded phytoplankton functional types (PFTs) at 8.0 km resolution",
+   "institution": "Alfred Wegener Institute",
+   "source": "Extracted from Copernicus Marine Service OCEANCOLOUR_GLO_BGC_L4_MY_009_104 PFT monthly data"
+  },
+  "groupAttrKeys": 4,
+  "groups": [],
+  "varname": "DIATO",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    36,
+    278,
+    694
+   ],
+   "units": "mg m^-3",
+   "long_name": "Diatoms chlorophyll a"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     278
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "min": 30.036035537719727,
+    "max": 50,
+    "nan": 0,
+    "first": 30.036035537719727,
+    "last": 50,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0720730",
+     "0.0720711",
+     "0.0720749"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     694
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "min": -9.963963508605957,
+    "max": 39.98198318481445,
+    "nan": 0,
+    "first": -9.963963508605957,
+    "last": 39.98198318481445,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0720720",
+     "0.0720730",
+     "0.0720725",
+     "0.0720723",
+     "0.0720721",
+     "0.0720711",
+     "0.0720749"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     36
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 2019-01-01 00:00:00",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 1065,
+    "nan": 0,
+    "first": 0,
+    "last": 1065,
+    "order": "ascending",
+    "distinctSteps": [
+     "31.0000",
+     "28.0000",
+     "30.0000",
+     "29.0000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "4DMED-SEA diffuse attenuation (Kd)",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/4dmed-2d-kd.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 7718,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 6
+  },
+  "groupAttrs": {
+   "title": "Monthly mean Kd (Geo2D) for KD_UVAB 2019-01",
+   "institution": "Alfred Wegener Institute",
+   "source": "Mean of daily gridded 8km NetCDFs"
+  },
+  "groupAttrKeys": 3,
+  "groups": [],
+  "varname": "Kd_blue",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    36,
+    278,
+    694
+   ],
+   "units": "m^-1",
+   "standard_name": "diffuse_attenuation_coefficient_of_downwelling_radiative_flux_in_sea_water",
+   "long_name": "Monthly mean diffuse attenuation coefficient"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float32",
+    "shape": [
+     278
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": 30.036035537719727,
+    "max": 50,
+    "nan": 0,
+    "first": 30.036035537719727,
+    "last": 50,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0720730",
+     "0.0720711",
+     "0.0720749"
+    ]
+   },
+   "lon": {
+    "dtype": "float32",
+    "shape": [
+     694
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -9.963963508605957,
+    "max": 39.98198318481445,
+    "nan": 0,
+    "first": -9.963963508605957,
+    "last": 39.98198318481445,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0720720",
+     "0.0720730",
+     "0.0720725",
+     "0.0720723",
+     "0.0720721",
+     "0.0720711",
+     "0.0720749"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     36
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 2019-01-01 00:00:00",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 1065,
+    "nan": 0,
+    "first": 0,
+    "last": 1065,
+    "order": "ascending",
+    "distinctSteps": [
+     "31.0000",
+     "28.0000",
+     "30.0000",
+     "29.0000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "4DMED-SEA 3D physical fields",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/tsgeo150.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 13260,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 10
+  },
+  "groupAttrs": {
+   "Conventions": "CF-1.0",
+   "title": "ARMOR3D REP - TSHUVMld Global Ocean Observation-based Product",
+   "institution": "CLS"
+  },
+  "groupAttrKeys": 6,
+  "groups": [],
+  "varname": "to",
+  "variable": {
+   "dims": [
+    "time",
+    "depth",
+    "latitude",
+    "longitude"
+   ],
+   "shape": [
+    2404,
+    20,
+    377,
+    1010
+   ],
+   "units": "degrees_C",
+   "standard_name": "sea_water_temperature",
+   "long_name": "temperature"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "depth": {
+    "dtype": "int16",
+    "shape": [
+     20
+    ],
+    "dims": [
+     "depth"
+    ],
+    "units": "m",
+    "axis": "Z",
+    "standard_name": "depth",
+    "min": 1,
+    "max": 153,
+    "nan": 0,
+    "first": 1,
+    "last": 153,
+    "order": "ascending",
+    "distinctSteps": [
+     "2.00000",
+     "3.00000",
+     "7.00000",
+     "8.00000",
+     "9.00000",
+     "10.0000",
+     "12.0000",
+     "13.0000",
+     "15.0000",
+     "16.0000",
+     "18.0000"
+    ]
+   },
+   "latitude": {
+    "dtype": "float32",
+    "shape": [
+     377
+    ],
+    "dims": [
+     "latitude"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": 30.27083396911621,
+    "max": 45.9375,
+    "nan": 0,
+    "first": 30.27083396911621,
+    "last": 45.9375,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416660",
+     "0.0416679",
+     "0.0416641"
+    ]
+   },
+   "longitude": {
+    "dtype": "float32",
+    "shape": [
+     1010
+    ],
+    "dims": [
+     "longitude"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -5.979164123535156,
+    "max": 36.062503814697266,
+    "nan": 0,
+    "first": -5.979164123535156,
+    "last": 36.062503814697266,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416665",
+     "0.0416670",
+     "0.0416667",
+     "0.0416666",
+     "0.0416660",
+     "0.0416679",
+     "0.0416641"
+    ]
+   },
+   "time": {
+    "dtype": "int32",
+    "shape": [
+     2404
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "hours since 1950-01-01",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "gregorian",
+    "min": 578556,
+    "max": 636228,
+    "nan": 0,
+    "first": 578556,
+    "last": 636228,
+    "order": "ascending",
+    "distinctSteps": [
+     "24.0000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "4DMED-SEA primary production",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/4dmed-pp.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 7988,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 6
+  },
+  "groupAttrs": {
+   "Conventions": "CF-1.7",
+   "title": "Primary Production field estimated from chlorophyll and temperature 3D fields [spatial resolution = 1/24 deg]",
+   "institution": "CNR",
+   "references": " "
+  },
+  "groupAttrKeys": 16,
+  "groups": [],
+  "varname": "PP",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon",
+    "depth"
+   ],
+   "shape": [
+    2405,
+    378,
+    1012,
+    148
+   ],
+   "units": "mg m-3 d-1",
+   "standard_name": "net_primary_production_of_biomass_expressed_as_carbon_per_unit_volume_in_sea_water",
+   "long_name": "Primary Production field estimated from chlorophyll and temperature 3D fields [spatial resolution = 1/24 deg]"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "depth": {
+    "dtype": "float32",
+    "shape": [
+     148
+    ],
+    "dims": [
+     "depth"
+    ],
+    "units": "m",
+    "axis": "Z",
+    "standard_name": "depth",
+    "min": -150,
+    "max": -3,
+    "nan": 0,
+    "first": -3,
+    "last": -150,
+    "order": "descending",
+    "distinctSteps": [
+     "-1.00000"
+    ]
+   },
+   "lat": {
+    "dtype": "float32",
+    "shape": [
+     378
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": 30.27083396911621,
+    "max": 45.97916793823242,
+    "nan": 0,
+    "first": 30.27083396911621,
+    "last": 45.97916793823242,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416660",
+     "0.0416679",
+     "0.0416641"
+    ]
+   },
+   "lon": {
+    "dtype": "float32",
+    "shape": [
+     1012
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -6.062498092651367,
+    "max": 36.0625,
+    "nan": 0,
+    "first": -6.062498092651367,
+    "last": 36.0625,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416660",
+     "0.0416670",
+     "0.0416679",
+     "0.0416641",
+     "0.0416718"
+    ]
+   },
+   "time": {
+    "dtype": "int32",
+    "shape": [
+     2405
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1981-01-01",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "gregorian",
+    "min": 12783,
+    "max": 15187,
+    "nan": 0,
+    "first": 12783,
+    "last": 15187,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "4DMED-SEA 3D biophysical fields",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/4dmed/4dmed-bp.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 79239,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 36
+  },
+  "groupAttrs": {
+   "Conventions": "CF-1.7",
+   "title": "Neural network reconstruction of 3D Mediterranean bio-physical fields from surface obs at 1/24 deg",
+   "institution": "CNR",
+   "references": "Buongiorno Nardelli, B. A Deep Learning Network to Retrieve Ocean Hydrographic Profiles from Combined Satellite and In Situ Measurements. Remote Sens. 2020, 12, 3151. https://doi.org/10.3390/rs12193151; Sammartino, M., Aronica, S., Santoleri, S., and B. Buongiorno Nardelli, (2022), Retrieving Mediterranean Sea Surface Salinity Distribution and Interannual Trends from Multi-Sensor Satellite and In Situ Data, Remote Sens., doi.org/10.3390/rs14102502",
+   "multiscales": "{\"layout\":[{\"asset\":\"0\",\"transform\":{\"scale\":[1,1],\"translation\":[0,0]},\"spatial:shape\":[378,1012],\"spatial:transform\":[0.04166666478007059,0,-6.083331425041402,0,0.0416666683530934,30.250000634939664,0,0,1]},{\"asset\":\"1\",\"derived_from\":\"0\",\"transform\":{\"scale\":[4,4],\"translation\":[0,0]},\"spatial:shape\":[94,253],\"spatial:transform\":[0.04166666478007059,0,-6.083331425041402,0,0.0416666683530934,30."
+  },
+  "groupAttrKeys": 24,
+  "groups": [
+   "0",
+   "1",
+   "2"
+  ],
+  "varname": "0/CHL3D",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon",
+    "depth"
+   ],
+   "shape": [
+    2405,
+    378,
+    1012,
+    148
+   ],
+   "units": "mg m-3",
+   "standard_name": "mass_concentration_of_chlorophyll_in_sea_water",
+   "long_name": "Neural network reconstruction of 3D Mediterranean chlorophyll field from surface obs at 1/24 deg",
+   "grid_mapping": "spatial_ref"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "depth": {
+    "dtype": "float32",
+    "shape": [
+     148
+    ],
+    "dims": [
+     "depth"
+    ],
+    "units": "m",
+    "axis": "Z",
+    "standard_name": "depth",
+    "min": -150,
+    "max": -3,
+    "nan": 0,
+    "first": -3,
+    "last": -150,
+    "order": "descending",
+    "distinctSteps": [
+     "-1.00000"
+    ]
+   },
+   "lat": {
+    "dtype": "float32",
+    "shape": [
+     378
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": 30.27083396911621,
+    "max": 45.97916793823242,
+    "nan": 0,
+    "first": 30.27083396911621,
+    "last": 45.97916793823242,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416660",
+     "0.0416679",
+     "0.0416641"
+    ]
+   },
+   "lon": {
+    "dtype": "float32",
+    "shape": [
+     1012
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -6.062498092651367,
+    "max": 36.0625,
+    "nan": 0,
+    "first": -6.062498092651367,
+    "last": 36.0625,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416660",
+     "0.0416670",
+     "0.0416679",
+     "0.0416641",
+     "0.0416718"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     2405
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 2016-01-01 00:00:00",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 2404,
+    "nan": 0,
+    "first": 0,
+    "last": 2404,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "WOC total surface current at 15 m",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/woc.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 20108,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 14
+  },
+  "groupAttrs": {
+   "license": "ESA WOC Data Policy: free and open access",
+   "Conventions": "CF-1.7, ACDD-1.3, ISO 8601",
+   "title": "North Altantic Total Surface Current for ESA WOC project",
+   "institution": "Datlas, Institut Francais de Recherche pour l'Exploitation de la mer / CERSAT, European Space Agency",
+   "source": "",
+   "references": "",
+   "geospatial_lat_min": -79.875,
+   "geospatial_lat_max": 79.875,
+   "geospatial_lon_min": -179.875,
+   "geospatial_lon_max": 79.875
+  },
+  "groupAttrKeys": 50,
+  "groups": [],
+  "varname": "ut_woc",
+  "variable": {
+   "dims": [
+    "time",
+    "depth",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    43800,
+    1,
+    63,
+    168
+   ],
+   "units": "m s-1"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "depth": {
+    "dtype": "float64",
+    "shape": [
+     1
+    ],
+    "dims": [
+     "depth"
+    ],
+    "units": "m",
+    "axis": "Z",
+    "standard_name": "depth",
+    "min": 15,
+    "max": 15,
+    "nan": 0,
+    "first": 15,
+    "last": 15
+   },
+   "lat": {
+    "dtype": "float32",
+    "shape": [
+     63
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degree north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": 30.375,
+    "max": 45.875,
+    "nan": 0,
+    "first": 30.375,
+    "last": 45.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float32",
+    "shape": [
+     168
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degree east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -5.875,
+    "max": 35.875,
+    "nan": 0,
+    "first": -5.875,
+    "last": 35.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "float64",
+    "shape": [
+     43800
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "seconds since 1970-01-01",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "gregorian",
+    "min": 1419897600,
+    "max": 1577746800,
+    "nan": 0,
+    "first": 1419897600,
+    "last": 1577746800,
+    "order": "ascending",
+    "distinctSteps": [
+     "3600.00",
+     "176400"
+    ]
+   }
+  }
+ },
+ {
+  "title": "4DAtlantic ocean heat content",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/ocean_heat.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 13983,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 10
+  },
+  "groupAttrs": {
+   "Conventions": "CF-1.8",
+   "source": "satellite observation",
+   "references": "https://doi.org/10.24400/527896/A01-2022.012"
+  },
+  "groupAttrKeys": 11,
+  "groups": [],
+  "varname": "ohc",
+  "variable": {
+   "dims": [
+    "time",
+    "latitude",
+    "longitude"
+   ],
+   "shape": [
+    258,
+    180,
+    360
+   ],
+   "units": "J m-2",
+   "standard_name": "sea_water_potential_temperature_expressed_as_heat_content",
+   "long_name": "ocean heat content"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "latitude": {
+    "dtype": "float64",
+    "shape": [
+     180
+    ],
+    "dims": [
+     "latitude"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -89.5,
+    "max": 89.5,
+    "nan": 0,
+    "first": -89.5,
+    "last": 89.5,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   },
+   "longitude": {
+    "dtype": "float64",
+    "shape": [
+     360
+    ],
+    "dims": [
+     "longitude"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -179.5,
+    "max": 179.5,
+    "nan": 0,
+    "first": -179.5,
+    "last": 179.5,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   },
+   "time": {
+    "dtype": "float64",
+    "shape": [
+     258
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1950-01-01",
+    "standard_name": "time",
+    "calendar": "julian",
+    "min": 19097.755000000012,
+    "max": 26921.541666666642,
+    "nan": 0,
+    "first": 19097.755000000012,
+    "last": 26921.541666666642,
+    "order": "ascending",
+    "distinctSteps": [
+     "30.6600",
+     "30.2950",
+     "31.0250",
+     "30.0000",
+     "31.5633",
+     "30.4167",
+     "31.0000",
+     "29.8333",
+     "30.4583",
+     "30.5000",
+     "28.0000",
+     "32.8333",
+     "29.2500",
+     "30.8333",
+     "29.6667",
+     "30.2500"
+    ]
+   }
+  }
+ },
+ {
+  "title": "OceanSODA-ETHZ v1 carbonate system",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/ocean-soda.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 14931,
+   "ok": true
+  },
+  "groupAttrs": {
+   "institution": "ETH Zuerich",
+   "source": "https://doi.org/10.25921/m5wx-ja34"
+  },
+  "groups": [],
+  "varname": "ph_total",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    516,
+    180,
+    360
+   ],
+   "units": "-log([H+])",
+   "coordinates": "year"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     180
+    ],
+    "dims": [
+     "lat"
+    ],
+    "min": -89.5,
+    "max": 89.5,
+    "nan": 0,
+    "first": -89.5,
+    "last": 89.5,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     360
+    ],
+    "dims": [
+     "lon"
+    ],
+    "min": -179.5,
+    "max": 179.5,
+    "nan": 0,
+    "first": -179.5,
+    "last": 179.5,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     516
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1982-01-15",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 15675,
+    "nan": 0,
+    "first": 0,
+    "last": 15675,
+    "order": "ascending",
+    "distinctSteps": [
+     "31.0000",
+     "28.0000",
+     "30.0000",
+     "29.0000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "OceanSODA-ETHZ v2 fgco2",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/fgco2.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 6414,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 4
+  },
+  "groupAttrs": {},
+  "groupAttrKeys": 14,
+  "groups": [],
+  "varname": "fgco2",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    1878,
+    720,
+    1440
+   ],
+   "units": "mmolC m-2 day-1",
+   "standard_name": "sea_to_air_co2_fluxes",
+   "long_name": "Sea-air CO$_2$ flux"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     720
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degree_N",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -89.875,
+    "max": 89.875,
+    "nan": 0,
+    "first": -89.875,
+    "last": 89.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degree_E",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     1878
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1982-01-05",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 14906,
+    "nan": 0,
+    "first": 0,
+    "last": 14906,
+    "order": "ascending",
+    "distinctSteps": [
+     "8.00000",
+     "6.00000",
+     "7.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "OceanSODA-ETHZ v2 fgco2CT",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/fgco2CT.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 4567,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 4
+  },
+  "groupAttrs": {},
+  "groupAttrKeys": 0,
+  "groups": [],
+  "varname": "fgco2",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    920,
+    720,
+    1440
+   ],
+   "units": "mmol m-2 day-1"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     720
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "min": -89.875,
+    "max": 89.875,
+    "nan": 0,
+    "first": -89.875,
+    "last": 89.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     920
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1982-01-04",
+    "calendar": "proleptic_gregorian",
+    "min": 6574,
+    "max": 13874,
+    "nan": 0,
+    "first": 6574,
+    "last": 13874,
+    "order": "ascending",
+    "distinctSteps": [
+     "8.00000",
+     "6.00000",
+     "5.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "OceanSODA-ETHZ v2 sfco2",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/sfco2.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 7845,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 4
+  },
+  "groupAttrs": {},
+  "groupAttrKeys": 14,
+  "groups": [],
+  "varname": "sfco2",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    1886,
+    720,
+    1440
+   ],
+   "units": "uatm",
+   "standard_name": "fugacity_of_carbon_dioxide_in_sea_water",
+   "long_name": "$f\\mathrm{CO} _2^{sea}$"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     720
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degree_N",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -89.875,
+    "max": 89.875,
+    "nan": 0,
+    "first": -89.875,
+    "last": 89.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degree_E",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     1886
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1982-01-04",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 14970,
+    "nan": 0,
+    "first": 0,
+    "last": 14970,
+    "order": "ascending",
+    "distinctSteps": [
+     "8.00000",
+     "5.00000",
+     "6.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "OceanSODA-ETHZ v2 sfco2_uncert",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/sfco2_uncert.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 6187,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 4
+  },
+  "groupAttrs": {},
+  "groupAttrKeys": 14,
+  "groups": [],
+  "varname": "sfco2_uncert",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    1886,
+    720,
+    1440
+   ],
+   "units": "uatm",
+   "long_name": "standard_error_fugacity_of_carbon_dioxide_in_sea_water"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     720
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degree_N",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -89.875,
+    "max": 89.875,
+    "nan": 0,
+    "first": -89.875,
+    "last": 89.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degree_E",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     1886
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1982-01-04",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 14970,
+    "nan": 0,
+    "first": 0,
+    "last": 14970,
+    "order": "ascending",
+    "distinctSteps": [
+     "8.00000",
+     "5.00000",
+     "6.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "OceanSODA-ETHZ v2 dfco2",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/dfco2.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 6166,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 4
+  },
+  "groupAttrs": {},
+  "groupAttrKeys": 14,
+  "groups": [],
+  "varname": "dfco2",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    1886,
+    720,
+    1440
+   ],
+   "units": "uatm",
+   "standard_name": "surface_carbon_dioxide_fugacity_difference_between_sea_water_and_air",
+   "long_name": "$\\Delta f\\mathrm{CO} _2$"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     720
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degree_N",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -89.875,
+    "max": 89.875,
+    "nan": 0,
+    "first": -89.875,
+    "last": 89.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degree_E",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     1886
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1982-01-04",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 14970,
+    "nan": 0,
+    "first": 0,
+    "last": 14970,
+    "order": "ascending",
+    "distinctSteps": [
+     "8.00000",
+     "5.00000",
+     "6.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "OceanSODA-ETHZ v2 kw",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/kw.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 6223,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 4
+  },
+  "groupAttrs": {},
+  "groupAttrKeys": 14,
+  "groups": [],
+  "varname": "kw",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    1877,
+    720,
+    1440
+   ],
+   "units": "cm hr-1",
+   "standard_name": "gas_transfer_velocity",
+   "long_name": "Gas transfer velocity of CO$_2$"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     720
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degree_N",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -89.875,
+    "max": 89.875,
+    "nan": 0,
+    "first": -89.875,
+    "last": 89.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degree_E",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     1877
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1982-01-05",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 14898,
+    "nan": 0,
+    "first": 0,
+    "last": 14898,
+    "order": "ascending",
+    "distinctSteps": [
+     "8.00000",
+     "6.00000",
+     "7.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "OceanSODA-ETHZ v2 sol",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/sol.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 5940,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 4
+  },
+  "groupAttrs": {},
+  "groupAttrKeys": 14,
+  "groups": [],
+  "varname": "sol",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    1877,
+    720,
+    1440
+   ],
+   "units": "mol L-1 atm-1",
+   "standard_name": "co2_solubility_in_seawater",
+   "long_name": "Solubility of CO$_2$ in seawater"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     720
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degree_N",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -89.875,
+    "max": 89.875,
+    "nan": 0,
+    "first": -89.875,
+    "last": 89.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degree_E",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     1877
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1982-01-05",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 14898,
+    "nan": 0,
+    "first": 0,
+    "last": 14898,
+    "order": "ascending",
+    "distinctSteps": [
+     "8.00000",
+     "6.00000",
+     "7.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "OceanSODA-ETHZ v2 temperature",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/temperature.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 6221,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 4
+  },
+  "groupAttrs": {},
+  "groupAttrKeys": 14,
+  "groups": [],
+  "varname": "temperature",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    1886,
+    720,
+    1440
+   ],
+   "units": "degree_C",
+   "standard_name": "sea_surface_subskin_temperature",
+   "long_name": "SST"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     720
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degree_N",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -89.875,
+    "max": 89.875,
+    "nan": 0,
+    "first": -89.875,
+    "last": 89.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degree_E",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     1886
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1982-01-04",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 14970,
+    "nan": 0,
+    "first": 0,
+    "last": 14970,
+    "order": "ascending",
+    "distinctSteps": [
+     "8.00000",
+     "5.00000",
+     "6.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "OceanSODA-ETHZ v2 ice",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/ice.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 6657,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 4
+  },
+  "groupAttrs": {},
+  "groupAttrKeys": 14,
+  "groups": [],
+  "varname": "ice",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    1886,
+    720,
+    1440
+   ],
+   "units": "fraction",
+   "long_name": "Sea-ice fraction"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     720
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -89.875,
+    "max": 89.875,
+    "nan": 0,
+    "first": -89.875,
+    "last": 89.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     1886
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1982-01-04",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 14970,
+    "nan": 0,
+    "first": 0,
+    "last": 14970,
+    "order": "ascending",
+    "distinctSteps": [
+     "8.00000",
+     "5.00000",
+     "6.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "WAPOSAL AZ CS2 along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/AZ-CS2.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5552,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    1554,
+    573
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL BN CS2 along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/BN-CS2.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5592,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    8632,
+    5309
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL FF CS2 along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FF-CS2.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5585,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    4533,
+    2245
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL FP CS2 along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FP-CS2.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5595,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    1668,
+    7019
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL MD CS2 along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/MD-CS2.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5574,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    4406,
+    2929
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL MT CS2 along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/MT-CS2.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5585,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    21047,
+    5495
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL NS CS2 along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/NS-CS2.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5581,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    3453,
+    1123
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL PT CS2 along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/PT-CS2.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5575,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    4208,
+    3932
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL UK CS2 along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/UK-CS2.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5563,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    9520,
+    4671
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL AZ S3A along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/AZ-S3A.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5574,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    1711,
+    1218
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL BN S3A along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/BN-S3A.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5594,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    8719,
+    6882
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL CN S3A along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/CN-S3A.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5578,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    1998,
+    1735
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL FF S3A along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FF-S3A.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5587,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    2274,
+    2095
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL FG S3A along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FG-S3A.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5544,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    527,
+    658
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL FP S3A along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FP-S3A.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5597,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    4864,
+    6885
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL MD S3A along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/MD-S3A.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5576,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    1248,
+    1041
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL MT S3A along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/MT-S3A.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5597,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    10339,
+    6263
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL NS S3A along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/NS-S3A.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5583,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    1867,
+    1046
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL PT S3A along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/PT-S3A.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5555,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    625,
+    1740
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL UK S3A along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/UK-S3A.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5565,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    5322,
+    4488
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL AZ S3B along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/AZ-S3B.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5574,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    1019,
+    1227
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL BN S3B along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/BN-S3B.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5594,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    5302,
+    6927
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL CN S3B along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/CN-S3B.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5578,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    1259,
+    1750
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL FF S3B along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FF-S3B.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5587,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    1608,
+    2112
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL FG S3B along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FG-S3B.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5544,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    327,
+    658
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL FP S3B along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/FP-S3B.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5597,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    3046,
+    6956
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL MD S3B along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/MD-S3B.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5554,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    778,
+    1050
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL MT S3B along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/MT-S3B.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5586,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    6344,
+    6072
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL NS S3B along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/NS-S3B.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5583,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    1210,
+    1061
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL PT S3B along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/PT-S3B.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5555,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    445,
+    1740
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "WAPOSAL UK S3B along-track waves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/waposal/UK-S3B.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 5565,
+   "ok": true
+  },
+  "groupAttrs": {
+   "license": "CC-BY-SA-4.0",
+   "Conventions": "CF-1.6/CF-1.7",
+   "institution": "CENTEC-IST-ID"
+  },
+  "groups": [],
+  "varname": "SWH_20Hz",
+  "variable": {
+   "dims": [
+    "trajectory",
+    "obs"
+   ],
+   "shape": [
+    3273,
+    4434
+   ],
+   "units": "meters",
+   "long_name": "Significant Wave Height at 20 Hz"
+  },
+  "dimsWithoutCoord": [
+   "trajectory",
+   "obs"
+  ],
+  "coords": {}
+ },
+ {
+  "title": "BROKEN - MITHO cumulative hazard index CHI1 / CHI3",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/mitho/ch13.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 61591,
+   "ok": false,
+   "error": "SyntaxError: Unexpected token 'N', ...\"g_value\": NaN,\n     \"... is not valid JSON",
+   "bareNaN": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "indexError": "Error: Not a valid icechunk repository: neither repo info file nor main branch found"
+ },
+ {
+  "title": "BROKEN - MITHO cumulative hazard index CHI2",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/mitho/chi2_2004_2022.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 58583,
+   "ok": false,
+   "error": "SyntaxError: Unexpected token 'N', ...\"g_value\": NaN,\n     \"... is not valid JSON",
+   "bareNaN": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "indexError": "Error: Not a valid icechunk repository: neither repo info file nor main branch found"
+ },
+ {
+  "title": "BROKEN - MITHO cumulative hazard index CHI4",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/mitho/chi4_2012_2020.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 27000,
+   "ok": false,
+   "error": "SyntaxError: Unexpected token 'N', ...\"g_value\": NaN,\n     \"... is not valid JSON",
+   "bareNaN": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "indexError": "Error: Not a valid icechunk repository: neither repo info file nor main branch found"
+ },
+ {
+  "title": "BICEP marine primary productivity",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/bicep/bicep_marine_primary_productivity.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 8222,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 6
+  },
+  "groupAttrs": {
+   "title": "BICEP / NCEO: Monthly global Marine Phytoplankton Primary Production, between 1998-2020 at 9 km resolution (derived from the Ocean Colour Climate Change Initiative v4.2)",
+   "institution": "Plymouth Marine Laboratory (PML)",
+   "references": "Kulk, G.; Platt, T.; Dingle, J.; Jackson, T.; Jönsson, B.F.; Bouman, H.A., Babin, M.; Doblin, M.; Estrada, M.; Figueiras, F.G.; Furuya, K.; González, N.; Gudfinnsson, H.G.; Gudmundsson, K.; Huang, B.; Isada, T.; Kovac, Z.; Lutz, V.A.; Marañón, E.; Raman, M.; Richardson, K.; Rozema, P.D.; Van de Poll, W.H.; Segura, V.; Tilstone, G.H.; Uitz, J.; van Dongen-Vogels, V.; Yoshikawa, T.; Sathyendranath S. Primary production, an index of climate change in the ocean: Satellite-based estimates over two decades. Remote Sens. 2020, 12, 826. doi:10.3390/rs12050826"
+  },
+  "groupAttrKeys": 7,
+  "groups": [],
+  "varname": "pp",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    276,
+    2160,
+    4320
+   ],
+   "units": "mg C m-2 d-1",
+   "standard_name": "gross_primary_production_of_carbon",
+   "long_name": " Phytoplankton Primary Production"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float32",
+    "shape": [
+     2160
+    ],
+    "dims": [
+     "lat"
+    ],
+    "min": -89.95832824707031,
+    "max": 89.95832824707031,
+    "nan": 0,
+    "first": -89.95832824707031,
+    "last": 89.95832824707031,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0833282",
+     "0.0833435",
+     "0.0833359",
+     "0.0833321",
+     "0.0833340",
+     "0.0833330",
+     "0.0833335",
+     "0.0833333",
+     "0.0833334"
+    ]
+   },
+   "latitude": {
+    "dtype": "float32",
+    "shape": [
+     276,
+     2160
+    ],
+    "dims": [
+     "time",
+     "lat"
+    ],
+    "units": "degrees north",
+    "standard_name": "latitude",
+    "min": -89.95833587646484,
+    "max": 89.95833587646484,
+    "nan": 0,
+    "first": -89.95833587646484,
+    "last": 89.95833587646484
+   },
+   "lon": {
+    "dtype": "float32",
+    "shape": [
+     4320
+    ],
+    "dims": [
+     "lon"
+    ],
+    "min": -179.95834350585938,
+    "max": 179.95834350585938,
+    "nan": 0,
+    "first": -179.95834350585938,
+    "last": 179.95834350585938,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0833435",
+     "0.0833130",
+     "0.0833282",
+     "0.0833359",
+     "0.0833321",
+     "0.0833340",
+     "0.0833330",
+     "0.0833335",
+     "0.0833333",
+     "0.0833334"
+    ]
+   },
+   "longitude": {
+    "dtype": "float32",
+    "shape": [
+     276,
+     4320
+    ],
+    "dims": [
+     "time",
+     "lon"
+    ],
+    "units": "degrees east",
+    "standard_name": "longitude",
+    "min": -179.9583282470703,
+    "max": 179.9583282470703,
+    "nan": 0,
+    "first": -179.9583282470703,
+    "last": 179.9583282470703
+   },
+   "time": {
+    "dtype": "float64",
+    "shape": [
+     276
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "hours since 1800-01-01",
+    "standard_name": "time",
+    "calendar": "proleptic_gregorian",
+    "min": 1735632,
+    "max": 1936512,
+    "nan": 0,
+    "first": 1735632,
+    "last": 1936512,
+    "order": "ascending",
+    "distinctSteps": [
+     "744.000",
+     "672.000",
+     "720.000",
+     "696.000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "BICEP phytoplankton carbon",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/bicep/phytoplankton_carbon.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 17754,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 13
+  },
+  "groupAttrs": {
+   "title": "BICEP / NCEO: Monthly global Phytoplankton Carbon, between 1998-2020 at 9 km resolution (derived from the Ocean Colour Climate Change Initiative v5)",
+   "institution": "Plymouth Marine Laboratory (PML)",
+   "references": "Sathyendranath S.; Platt T.; Kovac Z.; Dingle J.; Jackson T.; Brewin R.J.W.; Franks P.; Maranon E.; Kulk G.; Bouman H. Reconciling models of primary production and photoacclimation. Applied Optics 2020, 59, C100-C114. doi.org/10.1364/AO.386252"
+  },
+  "groupAttrKeys": 7,
+  "groups": [],
+  "varname": "C_phyto",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    276,
+    2160,
+    4320
+   ],
+   "units": "mg C m-3",
+   "standard_name": "mass_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water",
+   "long_name": "Total Phytoplankton Carbon"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float32",
+    "shape": [
+     2160
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees north",
+    "standard_name": "latitude",
+    "min": -89.95833587646484,
+    "max": 89.95833587646484,
+    "nan": 0,
+    "first": -89.95833587646484,
+    "last": 89.95833587646484,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0833359",
+     "0.0833282",
+     "0.0833321",
+     "0.0833340",
+     "0.0833330",
+     "0.0833335",
+     "0.0833333",
+     "0.0833334"
+    ]
+   },
+   "latitude": {
+    "dtype": "float32",
+    "shape": [
+     2160
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees north",
+    "standard_name": "latitude",
+    "min": -89.95833587646484,
+    "max": 89.95833587646484,
+    "nan": 0,
+    "first": -89.95833587646484,
+    "last": 89.95833587646484,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0833359",
+     "0.0833282",
+     "0.0833321",
+     "0.0833340",
+     "0.0833330",
+     "0.0833335",
+     "0.0833333",
+     "0.0833334"
+    ]
+   },
+   "lon": {
+    "dtype": "float32",
+    "shape": [
+     4320
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees east",
+    "standard_name": "longitude",
+    "min": -179.9583282470703,
+    "max": 179.9583282470703,
+    "nan": 0,
+    "first": -179.9583282470703,
+    "last": 179.9583282470703,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0833282",
+     "0.0833435",
+     "0.0833359",
+     "0.0833321",
+     "0.0833340",
+     "0.0833330",
+     "0.0833335",
+     "0.0833333",
+     "0.0833334"
+    ]
+   },
+   "longitude": {
+    "dtype": "float32",
+    "shape": [
+     4320
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees east",
+    "standard_name": "longitude",
+    "min": -179.9583282470703,
+    "max": 179.9583282470703,
+    "nan": 0,
+    "first": -179.9583282470703,
+    "last": 179.9583282470703,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0833282",
+     "0.0833435",
+     "0.0833359",
+     "0.0833321",
+     "0.0833340",
+     "0.0833330",
+     "0.0833335",
+     "0.0833333",
+     "0.0833334"
+    ]
+   },
+   "time": {
+    "dtype": "float64",
+    "shape": [
+     276
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "hours since 1800-01-01",
+    "standard_name": "time",
+    "calendar": "proleptic_gregorian",
+    "min": 1735632,
+    "max": 1936512,
+    "nan": 0,
+    "first": 1735632,
+    "last": 1936512,
+    "order": "ascending",
+    "distinctSteps": [
+     "744.000",
+     "672.000",
+     "720.000",
+     "696.000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "BICEP particulate organic carbon",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/bicep/particulate_organic_carbon_geo.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 13310,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 8
+  },
+  "groupAttrs": {
+   "title": "NCEO/BICEP: Monthly global Particulate Organic Carbon (POC), between 1997-2020 gridded geographic projection at 4 km resolution (derived from the Ocean Colour Climate Change Initiative version 5)",
+   "geospatial_lat_min": -90,
+   "geospatial_lat_max": 90,
+   "geospatial_lon_min": -180,
+   "geospatial_lon_max": 180
+  },
+  "groupAttrKeys": 26,
+  "groups": [],
+  "varname": "POC",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    280,
+    4320,
+    8640
+   ],
+   "units": "mg m^-3",
+   "standard_name": "mass_concentration_of_particulate_organic_carbon_in_sea_water",
+   "long_name": "Particulate Organic Carbon"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     4320
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -89.97916666666666,
+    "max": 89.97916666666667,
+    "nan": 0,
+    "first": 89.97916666666667,
+    "last": -89.97916666666666,
+    "order": "descending",
+    "distinctSteps": [
+     "-0.0416667"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     8640
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -179.97916666666666,
+    "max": 179.97916666666663,
+    "nan": 0,
+    "first": -179.97916666666666,
+    "last": 179.97916666666663,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416667"
+    ]
+   },
+   "time": {
+    "dtype": "int32",
+    "shape": [
+     280
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1970-01-01",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "proleptic_gregorian",
+    "min": 10108,
+    "max": 18597,
+    "nan": 0,
+    "first": 10108,
+    "last": 18597,
+    "order": "ascending",
+    "distinctSteps": [
+     "27.0000",
+     "31.0000",
+     "30.0000",
+     "28.0000",
+     "29.0000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "BICEP oceanic export production",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/bicep/bicep_oceanic_export_production.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 9312,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 6
+  },
+  "groupAttrs": {
+   "institution": "Plymouth Marine Laboratory",
+   "geospatial_lat_min": -90,
+   "geospatial_lat_max": 90,
+   "geospatial_lon_min": -180,
+   "geospatial_lon_max": 180
+  },
+  "groupAttrKeys": 41,
+  "groups": [],
+  "varname": "EP_Henson",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    264,
+    2160,
+    4320
+   ]
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     2160
+    ],
+    "dims": [
+     "lat"
+    ],
+    "min": -89.95833333333333,
+    "max": 89.95833333333333,
+    "nan": 0,
+    "first": 89.95833333333333,
+    "last": -89.95833333333333,
+    "order": "descending",
+    "distinctSteps": [
+     "-0.0833333"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     4320
+    ],
+    "dims": [
+     "lon"
+    ],
+    "min": -179.95833333333334,
+    "max": 179.9583333333333,
+    "nan": 0,
+    "first": -179.95833333333334,
+    "last": 179.9583333333333,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0833333"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     264
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1998-01-16",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 8004,
+    "nan": 0,
+    "first": 0,
+    "last": 8004,
+    "order": "ascending",
+    "distinctSteps": [
+     "31.0000",
+     "28.0000",
+     "30.0000",
+     "29.0000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "CAREHeat marine heatwave category",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/careheat_mhw_2d.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 5406,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 4
+  },
+  "groupAttrs": {
+   "institution": "CNR-ISMAR"
+  },
+  "groupAttrKeys": 16,
+  "groups": [],
+  "varname": "category",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    16437,
+    720,
+    1440
+   ],
+   "units": "1",
+   "long_name": "extreme_event_category"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float32",
+    "shape": [
+     720
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "min": -89.875,
+    "max": 89.875,
+    "nan": 0,
+    "first": -89.875,
+    "last": 89.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float32",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "float64",
+    "shape": [
+     16437
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1850-01-01",
+    "calendar": "proleptic_gregorian",
+    "min": 47481,
+    "max": 63917,
+    "nan": 0,
+    "first": 47481,
+    "last": 63917,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "CAREHeat marine heatwave metrics",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/careheat_mhw_metrics_2d.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 13376,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 11
+  },
+  "groupAttrs": {
+   "institution": "CNR-ISMAR"
+  },
+  "groupAttrKeys": 16,
+  "groups": [],
+  "varname": "intensity_max",
+  "variable": {
+   "dims": [
+    "nevent",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    600,
+    720,
+    1440
+   ],
+   "units": "K",
+   "long_name": "intensity_max"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float32",
+    "shape": [
+     720
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "min": -89.875,
+    "max": 89.875,
+    "nan": 0,
+    "first": -89.875,
+    "last": 89.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float32",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "nevent": {
+    "dtype": "int16",
+    "shape": [
+     600
+    ],
+    "dims": [
+     "nevent"
+    ],
+    "units": "1",
+    "min": 0,
+    "max": 599,
+    "nan": 0,
+    "first": 0,
+    "last": 599,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "CAREHeat sea-surface-anomaly heatwave category",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/ssa_careheat_mhw_2d.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 5406,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 4
+  },
+  "groupAttrs": {
+   "institution": "CNR-ISMAR"
+  },
+  "groupAttrKeys": 16,
+  "groups": [],
+  "varname": "category",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    16437,
+    720,
+    1440
+   ],
+   "units": "1",
+   "long_name": "extreme_event_category"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float32",
+    "shape": [
+     720
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "min": -89.875,
+    "max": 89.875,
+    "nan": 0,
+    "first": -89.875,
+    "last": 89.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float32",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "float64",
+    "shape": [
+     16437
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1850-01-01",
+    "calendar": "proleptic_gregorian",
+    "min": 47481,
+    "max": 63917,
+    "nan": 0,
+    "first": 47481,
+    "last": 63917,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "CAREHeat sea-surface-anomaly heatwave metrics",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/ssa_careheat_mhw_metrics_2d.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 13376,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 11
+  },
+  "groupAttrs": {
+   "institution": "CNR-ISMAR"
+  },
+  "groupAttrKeys": 16,
+  "groups": [],
+  "varname": "intensity_max",
+  "variable": {
+   "dims": [
+    "nevent",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    700,
+    720,
+    1440
+   ],
+   "units": "K",
+   "long_name": "intensity_max"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float32",
+    "shape": [
+     720
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "min": -89.875,
+    "max": 89.875,
+    "nan": 0,
+    "first": -89.875,
+    "last": 89.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "lon": {
+    "dtype": "float32",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "nevent": {
+    "dtype": "int16",
+    "shape": [
+     700
+    ],
+    "dims": [
+     "nevent"
+    ],
+    "units": "1",
+    "min": 0,
+    "max": 699,
+    "nan": 0,
+    "first": 0,
+    "last": 699,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "CAREHeat 4D Mediterranean heatwaves",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/careheat4d-med.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 7431,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 6
+  },
+  "groupAttrs": {
+   "Conventions": "CF-1.0",
+   "institution": "CLS"
+  },
+  "groupAttrKeys": 4,
+  "groups": [],
+  "varname": "mhw",
+  "variable": {
+   "dims": [
+    "time",
+    "depth",
+    "latitude",
+    "longitude"
+   ],
+   "shape": [
+    10587,
+    26,
+    126,
+    289
+   ],
+   "units": "1",
+   "long_name": "Marine Heat Wave Category"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "depth": {
+    "dtype": "int16",
+    "shape": [
+     26
+    ],
+    "dims": [
+     "depth"
+    ],
+    "units": "m",
+    "axis": "Z",
+    "standard_name": "depth",
+    "min": 0,
+    "max": 300,
+    "nan": 0,
+    "first": 0,
+    "last": 300,
+    "order": "ascending",
+    "distinctSteps": [
+     "5.00000",
+     "10.0000",
+     "25.0000"
+    ]
+   },
+   "latitude": {
+    "dtype": "float32",
+    "shape": [
+     126
+    ],
+    "dims": [
+     "latitude"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": 30.3125,
+    "max": 45.9375,
+    "nan": 0,
+    "first": 30.3125,
+    "last": 45.9375,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.125000"
+    ]
+   },
+   "longitude": {
+    "dtype": "float32",
+    "shape": [
+     289
+    ],
+    "dims": [
+     "longitude"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": 0.0625,
+    "max": 36.0625,
+    "nan": 0,
+    "first": 0.0625,
+    "last": 36.0625,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.125000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     10587
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1993-01-05 12:00:00",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 10587,
+    "nan": 0,
+    "first": 0,
+    "last": 10587,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000",
+     "2.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "BOOMS seascapes T1 optical water types",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/booms/seascape-t1-owt.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 5120,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 4
+  },
+  "groupAttrs": {},
+  "groupAttrKeys": 3,
+  "groups": [],
+  "varname": "smoothed_mode_dominant_water_class",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    294,
+    4320,
+    8640
+   ]
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     4320
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -89.97916666666666,
+    "max": 89.97916666666667,
+    "nan": 0,
+    "first": 89.97916666666667,
+    "last": -89.97916666666666,
+    "order": "descending",
+    "distinctSteps": [
+     "-0.0416667"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     8640
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -179.97916666666666,
+    "max": 179.97916666666663,
+    "nan": 0,
+    "first": -179.97916666666666,
+    "last": 179.97916666666663,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416667"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     294
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1998-01-01",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 8917,
+    "nan": 0,
+    "first": 0,
+    "last": 8917,
+    "order": "ascending",
+    "distinctSteps": [
+     "31.0000",
+     "28.0000",
+     "30.0000",
+     "29.0000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "BOOMS seascapes T2 biophysical",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/booms/seascape-t2-biophysical.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 13868,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 4
+  },
+  "groupAttrs": {
+   "license": "ESA CCI Data Policy: free and open access.  When referencing, please use: Ocean Colour Climate Change Initiative dataset, Version <Version Number>, European Space Agency, available online at http://www.esa-oceancolour-cci.org.  We would also appreciate being notified of publications so that we can list them on the project website at http://www.esa-oceancolour-cci.org/?q=publications",
+   "Conventions": "CF-1.7",
+   "title": "ESA CCI Ocean Colour Product",
+   "institution": "Plymouth Marine Laboratory",
+   "source": "NASA SeaWiFS  L1A and L2 R2018.0 LAC and GAC, MODIS-Aqua L1A and L2 R2018.0, MERIS L1B 4th reprocessing inc OCL corrections, NASA VIIRS L1A and L2 R2018.0, OLCI L1B",
+   "references": "http://www.esa-oceancolour-cci.org/",
+   "geospatial_lat_min": -90,
+   "geospatial_lat_max": 90,
+   "geospatial_lon_min": -180,
+   "geospatial_lon_max": 180
+  },
+  "groupAttrKeys": 52,
+  "groups": [],
+  "varname": "smoothed_dominant_water_class",
+  "variable": {
+   "dims": [
+    "time",
+    "lat",
+    "lon"
+   ],
+   "shape": [
+    282,
+    4320,
+    8640
+   ]
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "lat": {
+    "dtype": "float64",
+    "shape": [
+     4320
+    ],
+    "dims": [
+     "lat"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -89.97916666666666,
+    "max": 89.97916666666667,
+    "nan": 0,
+    "first": 89.97916666666667,
+    "last": -89.97916666666666,
+    "order": "descending",
+    "distinctSteps": [
+     "-0.0416667"
+    ]
+   },
+   "lon": {
+    "dtype": "float64",
+    "shape": [
+     8640
+    ],
+    "dims": [
+     "lon"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -179.97916666666666,
+    "max": 179.97916666666663,
+    "nan": 0,
+    "first": -179.97916666666666,
+    "last": 179.97916666666663,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416667"
+    ]
+   },
+   "time": {
+    "dtype": "int32",
+    "shape": [
+     282
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1970-01-01",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "proleptic_gregorian",
+    "min": 10592,
+    "max": 19144,
+    "nan": 0,
+    "first": 10592,
+    "last": 19144,
+    "order": "ascending",
+    "distinctSteps": [
+     "31.0000",
+     "28.0000",
+     "30.0000",
+     "29.0000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "BOOMS 4D seascapes, Atlantic",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/booms/seascape-t3-4d-atlantic.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 10026,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 5
+  },
+  "groupAttrs": {},
+  "groupAttrKeys": 4,
+  "groups": [],
+  "varname": "mode_seascape_4D",
+  "variable": {
+   "dims": [
+    "time",
+    "depth",
+    "longitude",
+    "latitude"
+   ],
+   "shape": [
+    252,
+    23,
+    501,
+    560
+   ]
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "depth": {
+    "dtype": "int16",
+    "shape": [
+     23
+    ],
+    "dims": [
+     "depth"
+    ],
+    "units": "m",
+    "axis": "Z",
+    "standard_name": "depth",
+    "min": 0,
+    "max": 225,
+    "nan": 0,
+    "first": 0,
+    "last": 225,
+    "order": "ascending",
+    "distinctSteps": [
+     "5.00000",
+     "10.0000",
+     "25.0000"
+    ]
+   },
+   "latitude": {
+    "dtype": "float32",
+    "shape": [
+     560
+    ],
+    "dims": [
+     "latitude"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -69.875,
+    "max": 69.875,
+    "nan": 0,
+    "first": -69.875,
+    "last": 69.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "longitude": {
+    "dtype": "float64",
+    "shape": [
+     501
+    ],
+    "dims": [
+     "longitude"
+    ],
+    "axis": "Y",
+    "min": -100.125,
+    "max": 24.875,
+    "nan": 0,
+    "first": -100.125,
+    "last": 24.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     252
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1999-01-06",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 7637,
+    "nan": 0,
+    "first": 0,
+    "last": 7637,
+    "order": "ascending",
+    "distinctSteps": [
+     "28.0000",
+     "35.0000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "BOOMS 4D seascapes, Southern Ocean",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/booms/seascape-t3-4d-southern.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 10243,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 5
+  },
+  "groupAttrs": {},
+  "groupAttrKeys": 4,
+  "groups": [],
+  "varname": "mode_seascape_4D",
+  "variable": {
+   "dims": [
+    "time",
+    "depth",
+    "longitude",
+    "latitude"
+   ],
+   "shape": [
+    252,
+    23,
+    1440,
+    130
+   ]
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "depth": {
+    "dtype": "int16",
+    "shape": [
+     23
+    ],
+    "dims": [
+     "depth"
+    ],
+    "units": "m",
+    "axis": "Z",
+    "standard_name": "depth",
+    "min": 0,
+    "max": 225,
+    "nan": 0,
+    "first": 0,
+    "last": 225,
+    "order": "ascending",
+    "distinctSteps": [
+     "5.00000",
+     "10.0000",
+     "25.0000"
+    ]
+   },
+   "latitude": {
+    "dtype": "float32",
+    "shape": [
+     130
+    ],
+    "dims": [
+     "latitude"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -82.125,
+    "max": -49.875,
+    "nan": 0,
+    "first": -82.125,
+    "last": -49.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "longitude": {
+    "dtype": "float32",
+    "shape": [
+     1440
+    ],
+    "dims": [
+     "longitude"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -179.875,
+    "max": 179.875,
+    "nan": 0,
+    "first": -179.875,
+    "last": 179.875,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     252
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1999-01-06",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 7637,
+    "nan": 0,
+    "first": 0,
+    "last": 7637,
+    "order": "ascending",
+    "distinctSteps": [
+     "28.0000",
+     "35.0000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "CoastDyn MIOST L4 sea-surface height",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/coastdyn/coastdyn-miost-l4.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 17360,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 11
+  },
+  "groupAttrs": {
+   "license": "",
+   "Conventions": "CF-1.6",
+   "title": "DT merged all satellites European Seas Gridded Experimental SSALTO/DUACS Sea Surface Height L4 product and derived variables",
+   "institution": "CLS, CNES",
+   "source": "Altimetry measurements",
+   "references": "https://www.aviso.altimetry.fr/en/home.html",
+   "geospatial_lat_min": 20,
+   "geospatial_lat_max": 78,
+   "geospatial_lon_min": -30,
+   "geospatial_lon_max": 42
+  },
+  "groupAttrKeys": 46,
+  "groups": [],
+  "varname": "adt",
+  "variable": {
+   "dims": [
+    "time",
+    "latitude",
+    "longitude"
+   ],
+   "shape": [
+    645,
+    930,
+    1154
+   ],
+   "units": "m",
+   "standard_name": "sea_surface_height_above_geoid",
+   "long_name": "Absolute dynamic topography",
+   "coordinates": "longitude latitude",
+   "grid_mapping": "crs"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "latitude": {
+    "dtype": "float32",
+    "shape": [
+     930
+    ],
+    "dims": [
+     "latitude"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": 19.96875,
+    "max": 78.03125,
+    "nan": 0,
+    "first": 19.96875,
+    "last": 78.03125,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0625000"
+    ]
+   },
+   "longitude": {
+    "dtype": "float32",
+    "shape": [
+     1154
+    ],
+    "dims": [
+     "longitude"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -30.03125,
+    "max": 42.03125,
+    "nan": 0,
+    "first": -30.03125,
+    "last": 42.03125,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0625000"
+    ]
+   },
+   "time": {
+    "dtype": "float32",
+    "shape": [
+     645
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1950-01-01",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "gregorian",
+    "min": 26749,
+    "max": 27393,
+    "nan": 0,
+    "first": 26749,
+    "last": 27393,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "UpperDyn Morlenn mixed layer, baseline",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/upperdyn-morlenn/morlenn_baseline.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 21724,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 15
+  },
+  "groupAttrs": {
+   "Conventions": "CF-1.11",
+   "title": "Morlenn baseline product",
+   "institution": "ODL",
+   "source": "Morlenn algorithm, checkpoint prod/train/canonical/baseline/baseline.pt; input maps data/maps/output_daily_025_v2/merged_025_20110101.nc"
+  },
+  "groupAttrKeys": 26,
+  "groups": [],
+  "varname": "mld",
+  "variable": {
+   "dims": [
+    "time",
+    "latitude",
+    "longitude"
+   ],
+   "shape": [
+    37984,
+    385,
+    569
+   ],
+   "units": "m",
+   "standard_name": "ocean_mixed_layer_thickness",
+   "long_name": "UpperDyn inferred mixed layer depth"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "latitude": {
+    "dtype": "float32",
+    "shape": [
+     385
+    ],
+    "dims": [
+     "latitude"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -6,
+    "max": 90,
+    "nan": 0,
+    "first": -6,
+    "last": 90,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "longitude": {
+    "dtype": "float32",
+    "shape": [
+     569
+    ],
+    "dims": [
+     "longitude"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -100,
+    "max": 42,
+    "nan": 0,
+    "first": -100,
+    "last": 42,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "float64",
+    "shape": [
+     37984
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "hours since 1970-01-01",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "proleptic_gregorian",
+    "min": 359400,
+    "max": 473349,
+    "nan": 0,
+    "first": 359400,
+    "last": 473349,
+    "order": "ascending",
+    "distinctSteps": [
+     "3.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "UpperDyn Morlenn mixed layer, assimilated",
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/upperdyn-morlenn/morlenn_assim.zarr",
+  "zarrJson": {
+   "status": 200,
+   "bytes": 21726,
+   "ok": true
+  },
+  "zmetadata": {
+   "status": 404
+  },
+  "rootV3": {
+   "zarr_format": 3,
+   "node_type": "group",
+   "consolidated": true,
+   "consolidatedNodes": 15
+  },
+  "groupAttrs": {
+   "Conventions": "CF-1.11",
+   "title": "Morlenn assim product",
+   "institution": "ODL",
+   "source": "Morlenn algorithm, checkpoint prod/train/canonical/assim_prod/assim_prod.pt; input maps data/maps/output_daily_025_v2/merged_025_20110101.nc"
+  },
+  "groupAttrKeys": 26,
+  "groups": [],
+  "varname": "mld",
+  "variable": {
+   "dims": [
+    "time",
+    "latitude",
+    "longitude"
+   ],
+   "shape": [
+    37984,
+    385,
+    569
+   ],
+   "units": "m",
+   "standard_name": "ocean_mixed_layer_thickness",
+   "long_name": "UpperDyn inferred mixed layer depth"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "latitude": {
+    "dtype": "float32",
+    "shape": [
+     385
+    ],
+    "dims": [
+     "latitude"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": -6,
+    "max": 90,
+    "nan": 0,
+    "first": -6,
+    "last": 90,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "longitude": {
+    "dtype": "float32",
+    "shape": [
+     569
+    ],
+    "dims": [
+     "longitude"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -100,
+    "max": 42,
+    "nan": 0,
+    "first": -100,
+    "last": 42,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.250000"
+    ]
+   },
+   "time": {
+    "dtype": "float64",
+    "shape": [
+     37984
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "hours since 1970-01-01",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "proleptic_gregorian",
+    "min": 359400,
+    "max": 473349,
+    "nan": 0,
+    "first": 359400,
+    "last": 473349,
+    "order": "ascending",
+    "distinctSteps": [
+     "3.00000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "SCOPE surface carbonate system",
+  "url": "https://deep-esdl-public.s3.eu-central-1.amazonaws.com/SCOPE/mediterranean/surface_carbonate_system_v2026_1.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 94046,
+   "ok": true
+  },
+  "groupAttrs": {},
+  "groups": [],
+  "varname": "fco2",
+  "variable": {
+   "dims": [
+    "time",
+    "latitude",
+    "longitude"
+   ],
+   "shape": [
+    552,
+    18,
+    48
+   ],
+   "units": "uatm",
+   "long_name": "Fugacity of CO2 in seawater",
+   "coordinates": "spatial_ref",
+   "grid_mapping": "spatial_ref"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "latitude": {
+    "dtype": "float32",
+    "shape": [
+     18
+    ],
+    "dims": [
+     "latitude"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": 29.5,
+    "max": 46.5,
+    "nan": 0,
+    "first": 29.5,
+    "last": 46.5,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   },
+   "longitude": {
+    "dtype": "float32",
+    "shape": [
+     48
+    ],
+    "dims": [
+     "longitude"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -9.5,
+    "max": 37.5,
+    "nan": 0,
+    "first": -9.5,
+    "last": 37.5,
+    "order": "ascending",
+    "distinctSteps": [
+     "1.00000"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     552
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1980-01-01",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 16771,
+    "nan": 0,
+    "first": 0,
+    "last": 16771,
+    "order": "ascending",
+    "distinctSteps": [
+     "31.0000",
+     "29.0000",
+     "30.0000",
+     "28.0000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "SCOPE coastal dissolved organic carbon",
+  "url": "https://deep-esdl-public.s3.eu-central-1.amazonaws.com/SCOPE/mediterranean/global_coastal_doc.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 9081,
+   "ok": true
+  },
+  "groupAttrs": {
+   "Conventions": "CF-1.7",
+   "title": "SCOPE/NCEO: Global Dissolved Organic Carbon between 1998-2022 at 4 km and monthly resolution",
+   "institution": "Plymouth Marine Laboratory (PML)",
+   "references": "Toming et al. (2026), https://doi.org/10.1016/j.rse.2026.115388; Laine et al. (2024), https://doi.org/10.3389/fmars.2024.1305050",
+   "geospatial_lat_min": -90,
+   "geospatial_lat_max": 90,
+   "geospatial_lon_min": -180,
+   "geospatial_lon_max": 180
+  },
+  "groups": [],
+  "varname": "doc",
+  "variable": {
+   "dims": [
+    "time",
+    "latitude",
+    "longitude"
+   ],
+   "shape": [
+    315,
+    432,
+    1152
+   ],
+   "units": "mg m-3",
+   "standard_name": "mass_concentration_of_dissolved_organic_carbon_in_seawater",
+   "long_name": "Dissolved Organic Carbon",
+   "coordinates": "spatial_ref",
+   "grid_mapping": "spatial_ref"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "latitude": {
+    "dtype": "float64",
+    "shape": [
+     432
+    ],
+    "dims": [
+     "latitude"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": 29.020833333333336,
+    "max": 46.97916666666667,
+    "nan": 0,
+    "first": 29.020833333333336,
+    "last": 46.97916666666667,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416667"
+    ]
+   },
+   "longitude": {
+    "dtype": "float64",
+    "shape": [
+     1152
+    ],
+    "dims": [
+     "longitude"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -9.979166666666686,
+    "max": 37.97916666666666,
+    "nan": 0,
+    "first": -9.979166666666686,
+    "last": 37.97916666666666,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416667"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     315
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1998-01-01",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 9556,
+    "nan": 0,
+    "first": 0,
+    "last": 9556,
+    "order": "ascending",
+    "distinctSteps": [
+     "31.0000",
+     "28.0000",
+     "30.0000",
+     "29.0000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "SCOPE open-ocean dissolved organic carbon",
+  "url": "https://deep-esdl-public.s3.eu-central-1.amazonaws.com/SCOPE/mediterranean/global_open_ocean_doc.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 8726,
+   "ok": true
+  },
+  "groupAttrs": {
+   "Conventions": "CF-1.7",
+   "title": "SCOPE/NCEO: Global Dissolved Organic Carbon between 1998-2022 at 4 km and monthly resolution",
+   "institution": "Plymouth Marine Laboratory (PML)",
+   "references": "Toming et al. (2026), https://doi.org/10.1016/j.rse.2026.115388; Laine et al. (2024), https://doi.org/10.3389/fmars.2024.1305050",
+   "geospatial_lat_min": -90,
+   "geospatial_lat_max": 90,
+   "geospatial_lon_min": -180,
+   "geospatial_lon_max": 180
+  },
+  "groups": [],
+  "varname": "doc",
+  "variable": {
+   "dims": [
+    "time",
+    "latitude",
+    "longitude"
+   ],
+   "shape": [
+    300,
+    432,
+    1152
+   ],
+   "units": "mg m-3",
+   "standard_name": "mass_concentration_of_dissolved_organic_carbon_in_seawater",
+   "long_name": "Dissolved Organic Carbon",
+   "coordinates": "spatial_ref",
+   "grid_mapping": "spatial_ref"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "latitude": {
+    "dtype": "float64",
+    "shape": [
+     432
+    ],
+    "dims": [
+     "latitude"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": 29.020833333333336,
+    "max": 46.97916666666667,
+    "nan": 0,
+    "first": 29.020833333333336,
+    "last": 46.97916666666667,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416667"
+    ]
+   },
+   "longitude": {
+    "dtype": "float64",
+    "shape": [
+     1152
+    ],
+    "dims": [
+     "longitude"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -9.979166666666686,
+    "max": 37.97916666666666,
+    "nan": 0,
+    "first": -9.979166666666686,
+    "last": 37.97916666666666,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416667"
+    ]
+   },
+   "time": {
+    "dtype": "int64",
+    "shape": [
+     300
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1998-01-01",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "proleptic_gregorian",
+    "min": 0,
+    "max": 9100,
+    "nan": 0,
+    "first": 0,
+    "last": 9100,
+    "order": "ascending",
+    "distinctSteps": [
+     "31.0000",
+     "28.0000",
+     "30.0000",
+     "29.0000"
+    ]
+   }
+  }
+ },
+ {
+  "title": "SCOPE carbon biogeochemistry",
+  "url": "https://deep-esdl-public.s3.eu-central-1.amazonaws.com/SCOPE/mediterranean/global_carbon_biogeochemistry.zarr",
+  "zarrJson": {
+   "status": 404
+  },
+  "zmetadata": {
+   "status": 200,
+   "bytes": 20303,
+   "ok": true
+  },
+  "groupAttrs": {
+   "Conventions": "CF-1.7",
+   "title": "SCOPE/NCEO: Global Ocean Carbon and Phytoplankton Primary Production between 1998-2022 at 4 km and monthly resolution",
+   "institution": "Plymouth Marine Laboratory (PML)",
+   "references": "Toming et al. (2026), https://doi.org/10.1016/j.rse.2026.115388; Laine et al. (2024), https://doi.org/10.3389/fmars.2024.1305050; Maranon et al. (2014), https://doi.org/10.1371/journal.pone.0099312; Kong et al. (in preparation)",
+   "geospatial_lat_min": -90,
+   "geospatial_lat_max": 90,
+   "geospatial_lon_min": -180,
+   "geospatial_lon_max": 180
+  },
+  "groups": [],
+  "varname": "pp",
+  "variable": {
+   "dims": [
+    "time",
+    "latitude",
+    "longitude"
+   ],
+   "shape": [
+    315,
+    432,
+    1152
+   ],
+   "long_name": "Phytoplankton Primary Production",
+   "coordinates": "spatial_ref",
+   "grid_mapping": "spatial_ref"
+  },
+  "dimsWithoutCoord": [],
+  "coords": {
+   "latitude": {
+    "dtype": "float64",
+    "shape": [
+     432
+    ],
+    "dims": [
+     "latitude"
+    ],
+    "units": "degrees_north",
+    "axis": "Y",
+    "standard_name": "latitude",
+    "min": 29.020833333333336,
+    "max": 46.97916666666667,
+    "nan": 0,
+    "first": 29.020833333333336,
+    "last": 46.97916666666667,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416667"
+    ]
+   },
+   "longitude": {
+    "dtype": "float64",
+    "shape": [
+     1152
+    ],
+    "dims": [
+     "longitude"
+    ],
+    "units": "degrees_east",
+    "axis": "X",
+    "standard_name": "longitude",
+    "min": -9.979166666666686,
+    "max": 37.97916666666666,
+    "nan": 0,
+    "first": -9.979166666666686,
+    "last": 37.97916666666666,
+    "order": "ascending",
+    "distinctSteps": [
+     "0.0416667"
+    ]
+   },
+   "time": {
+    "dtype": "int32",
+    "shape": [
+     315
+    ],
+    "dims": [
+     "time"
+    ],
+    "units": "days since 1970-01-01",
+    "axis": "T",
+    "standard_name": "time",
+    "calendar": "proleptic_gregorian",
+    "min": 10227,
+    "max": 19783,
+    "nan": 0,
+    "first": 10227,
+    "last": 19783,
+    "order": "ascending",
+    "distinctSteps": [
+     "31.0000",
+     "28.0000",
+     "30.0000",
+     "29.0000"
+    ]
+   }
+  }
+ }
+]

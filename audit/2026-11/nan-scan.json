@@ -1,0 +1,113 @@
+[
+ {
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean-soda/ocean-soda.zarr",
+  "v": "ph_total",
+  "shape": [
+   516,
+   180,
+   360
+  ],
+  "dims": [
+   "time",
+   "lat",
+   "lon"
+  ],
+  "scanDim": 0,
+  "i0": 1,
+  "i1": 0.3943,
+  "i2": 0.3943,
+  "i6": 0.3937,
+  "i12": 0.3943,
+  "i24": 0.3943,
+  "i120": 0.3943
+ },
+ {
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/ocean_datasets/4dmed-pp.zarr",
+  "v": "PP",
+  "shape": [
+   2405,
+   378,
+   1012,
+   148
+  ],
+  "dims": [
+   "time",
+   "lat",
+   "lon",
+   "depth"
+  ],
+  "scanDim": 1,
+  "i0": 1,
+  "i1": 0.9994,
+  "i2": 0.9983,
+  "i3": 0.9968,
+  "i5": 0.9923,
+  "i10": 0.9772,
+  "i20": 0.9274
+ },
+ {
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/4dmed/4dmed-bp.zarr",
+  "v": "0/CHL3D",
+  "shape": [
+   2405,
+   378,
+   1012,
+   148
+  ],
+  "dims": [
+   "time",
+   "lat",
+   "lon",
+   "depth"
+  ],
+  "scanDim": 1,
+  "i0": 1,
+  "i1": 0.9994,
+  "i2": 0.9983,
+  "i3": 0.9968,
+  "i5": 0.9923,
+  "i10": 0.9772,
+  "i20": 0.9274
+ },
+ {
+  "url": "https://s3.waw4-1.cloudferro.com/EarthCODE/OSCAssets/4dmed/4dmed-bp.zarr",
+  "v": "0/CHL3D",
+  "shape": [
+   2405,
+   378,
+   1012,
+   148
+  ],
+  "dims": [
+   "time",
+   "lat",
+   "lon",
+   "depth"
+  ],
+  "scanDim": 0,
+  "i0": 0.9923,
+  "i1": 0.9923,
+  "i100": 0.9923,
+  "i1202": 0.9923
+ },
+ {
+  "url": "https://deep-esdl-public.s3.eu-central-1.amazonaws.com/SCOPE/mediterranean/global_carbon_biogeochemistry.zarr",
+  "v": "pp",
+  "shape": [
+   315,
+   432,
+   1152
+  ],
+  "dims": [
+   "time",
+   "latitude",
+   "longitude"
+  ],
+  "scanDim": 0,
+  "i0": 0.6096,
+  "i100": 0.5885,
+  "i200": 0.6,
+  "i300": 1,
+  "i314": 1
+ }
+]
